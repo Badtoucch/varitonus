@@ -1,0 +1,24 @@
+section.attention.block.section-bg
+	.container
+		.attention-content
+			.attention__right
+				h2.title.attention__title Внимание 
+					span.red Акция!
+				.attention__pack
+					img(src="img/pack.png", alt="Varilif")
+					img.attention__quality(src="img/quality_.png", alt="quality sign")
+				.attention-form
+					.attention-form__top
+						p.form__term  Только сегодня 
+							span.date-0.text-nowrap(data-format="dd month")
+						p.form__free.text-bold БЕСПЛАТНО!*
+						include timer
+					form.x_order_form.attention-form__body(action="/submit" method="post")
+						.form__input-wrap.form__input-wrap--name
+							input.form__input.form__input--name(type="text" name="name" placeholder="Мое имя" required)
+						.form__input-wrap.form__input-wrap--tel
+							input.form__input.form__input--tel(type="tel" name="phone" placeholder="Мой телефон" required)
+						.attention__button-wrap
+							button.form__button.btn Получить
+								.form__button-free бесплатно
+							p.form__note    *при оформлении заказа

@@ -1,0 +1,131 @@
+.move
+	padding: 12px 0 14px
+	position: relative
+	background-color: #ebebeb;
+	+r(1023)
+		padding-top: 62px !important
+	+r(767)
+		padding-top: 52px !important
+	+r(479)
+		padding-top: 47px !important
+	&-content
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		+r(1219)
+			justify-content: center
+		+r(479)
+			flex-direction: column
+	&-info
+		display: flex
+		justify-content: center
+		align-items: center
+		+r(1023)
+			flex-wrap: wrap
+			max-width: 270px
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			margin-left: 30px
+		+r(767)
+			margin-left: 15px
+		+r(639)
+			margin-left: 5px
+			max-width: 245px
+	&-pack
+		max-width: 110px
+		position: relative
+		flex-shrink: 0
+		+r(1023)
+			max-width: 220px
+		+r(767)
+			max-width: 200px
+		+r(479)
+			margin-bottom: 10px
+		&__action
+			width: 77px
+			height: 58px
+			background: url(../img/action-bg.png) no-repeat center
+			background-size: contain
+			position: absolute
+			top: -23px
+			right: -41px
+			+r(1023)
+				right: -10px
+			+r(767)
+				right: -15px
+		&__text
+			left: 50%
+			top: 50%
+			font-size: 12px
+			color: #fff
+			position: absolute
+			transform: translate(-55%,-60%) rotate(-35deg)
+	&-btn
+		max-width: 265px
+		margin-left: 26px
+		width: 265px
+		+r(1023)
+			margin-left: 0px
+			margin-top: 10px
+			max-width: 100%
+		+r(639)
+			margin-top: 10px
+			margin-left: 0
+	&__title
+		margin-left: 55px
+		max-width: 241px
+		color: #000000
+		font-size: 18px
+		font-weight: 400
+		line-height: 22px
+		position: relative
+		margin-right: 38px
+		width: 100%
+		padding-right: 29px
+		+r(1219)
+			margin-left: 20px
+		+r(1023)
+			margin-left: 0px
+			padding-right: 0
+			margin-right: 0px
+			text-align: center
+			font-size: 17px
+			max-width: 100%
+		&::before
+			content: ''
+			position: absolute
+			top: 4px
+			right: 0
+			width: 1px
+			height: 60px
+			background-color: #d5d5d5
+			+r(1023)
+				display: none
+		&--color
+			color: #ff3333
+			font-weight: 900
+		b
+			font-weight: bold
+	&-timer
+		display: flex
+		+r(1219)
+			flex-direction: column
+		&__title
+			margin-top: 5px
+			color: #333333
+			font-size: 16px
+			font-weight: 400
+			line-height: 18px
+			max-width: 120px
+			margin-right: 18px
+			+r(1219)
+				margin-right: 0
+				text-align: center
+				max-width: 100%
+				margin-bottom: 5px
+				margin-top: 0px
+			+r(1023)
+				margin-top: 10px
+	.timer__cell
+		background-color: #ffb401

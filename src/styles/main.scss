@@ -1,0 +1,34 @@
+// основные настройки
+@import "settings/index";
+
+// библиотеки
+@import "libs/index";
+
+// компоненты
+@import "components/btn";
+@import "components/top-banner";
+@import "components/promo";
+@import "components/header";
+@import "components/header__content";
+@import "components/main-form";
+@import "components/menu";
+@import "components/timer";
+@import "components/unique";
+@import "components/attention";
+@import "components/clients";
+@import "components/composition";
+@import "components/stat";
+@import "components/doctor";
+@import "components/move";
+@import "components/reviews";
+@import "components/use";
+@import "components/order";
+@import "components/fakes";
+@import "components/promo-last";
+@import "components/footer";
+@import "components/wPopup";
+@import "components/popup";
+
+
+// паддинг секций (импортируем последним для правильного каскадирования стилей)
+@import "settings/padding";

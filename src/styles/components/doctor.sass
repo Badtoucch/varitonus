@@ -1,0 +1,136 @@
+.doctor
+	padding-top: 85px
+	background: $bg
+	+r(1219)
+		padding-bottom: 0 !important
+	+r(1023)
+		background-image: url(../img/adaptive-bg.jpg)
+	&-content
+		margin-top: 42px
+		display: flex
+		justify-content: flex-end
+		position: relative
+		+r(1219)
+			margin-top: 25px
+		+r(1023)
+			margin-top: 15px
+		&-img
+			position: absolute
+			bottom: 0
+			left: -60px
+			+r(1219)
+				left: -40px
+				max-width: 460px
+			+r(1023)
+				display: none
+			&::before
+				content: ''
+				position: absolute
+				bottom: 89px
+				right: -54px
+				background: url(../img/certificate.jpg) no-repeat center
+				width: 150px
+				height: 216px
+				background-size: contain
+				+r(1219)
+					width: 130px
+					right: 0px
+	&-text
+		max-width: 599px
+		width: 100%
+		+r(1219)
+			max-width: 530px
+		+r(1023)
+			max-width: 100%
+		&__q
+			color: #000000
+			font-family: "PT Serif"
+			font-size: 20px
+			font-weight: 700
+			font-style: italic
+			line-height: 26px
+			margin-bottom: 14px
+			+r(1219)
+				font-size: 19px
+				line-height: 25px
+				margin-bottom: 10px
+			+r(767)
+				margin-bottom: 7px
+		&__a
+			color: #444444
+			font-size: 18px
+			line-height: 28px
+			margin-bottom: 12px
+			+r(1219)
+				font-size: 17px
+				line-height: 24px
+				margin-bottom: 8px
+		&__name
+			color: #332f2f
+			font-size: 26px
+			font-weight: 700
+			line-height: 1
+			padding-top: 32px
+			margin-top: 22px
+			position: relative
+			+r(1219)
+				font-size: 24px
+				padding-top: 26px
+				margin-top: 15px
+			+r(639)
+				text-align: center
+				padding-top: 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 35px
+				height: 5px
+				background-color: #915169
+				+r(639)
+					left: 50%
+					transform: translateX(-50%)
+		&__post
+			margin-top: 16px
+			color: #666666
+			font-size: 17px
+			max-width: 295px
+			line-height: 24px
+			position: relative
+			margin-bottom: 118px
+			+r(1219)
+				margin-bottom: 60px
+				margin-top: 10px
+				font-size: 16px
+				max-width: 270px
+				line-height: normal
+			+r(1023)
+				margin-bottom: 40px
+			+r(767)
+				margin-bottom: 30px
+			+r(639)
+				max-width: 100%
+				text-align: center
+			+r(479)
+				margin-bottom: 25px
+			&::after
+				content: ''
+				position: absolute
+				right: -303px
+				bottom: -15px
+				background: url(../img/sign.png) no-repeat center
+				width: 284px
+				height: 115px
+				+r(1219)
+					right: -250px
+				+r(639)
+					position: static
+					display: block
+					margin-top: 8px
+					margin-left: auto
+					margin-right: auto
+
+
+
+					

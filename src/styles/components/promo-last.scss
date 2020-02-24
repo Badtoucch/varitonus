@@ -1,0 +1,20 @@
+.promo-last {
+  padding-top: 68px;
+  margin-bottom: 37px;
+  @include r(1023) {
+    margin-bottom: 0;
+    padding-top: 40px;
+  }
+
+  @include r(767) {
+    padding-top: 30px;
+  }
+
+  @include r(479) {
+    padding-top: 25px;
+  }
+
+  .main__human {
+    top: 12px;
+  }
+}

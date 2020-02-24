@@ -1,0 +1,43 @@
+.timer__title {
+  font-size: 16px;
+  color: #333333;
+}
+
+.timer__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer__cell {
+  margin-right: 3px;
+  padding: 10.6px 11.3px;
+  border-radius: 5px;
+  background-color: $color-accent1;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open sans";
+  color: #000000;
+}
+
+.timer__cell:last-of-type {
+  margin-right: 0;
+}
+
+.timer__colon {
+  margin-right: 3px;
+  font-family: "Open sans";
+  font-size: 19px;
+  opacity: 0.49
+}
+
+.menu .timer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .timer__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+  }
+}

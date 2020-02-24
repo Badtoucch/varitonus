@@ -1,0 +1,277 @@
+.unique {
+  padding: 90px 0;
+}
+
+.unique__title {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.unique-content {
+  margin-top: 40px;
+  display: flex;
+
+  @include r(767) {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+}
+
+.unique__right {
+  @include r(767) {
+    display: none;
+  }
+}
+
+.unique-list {
+  max-width: 570px;
+  padding-left: 70px;
+
+  @include r(1219) {
+    max-width: 500px;
+    padding-left: 0;
+  }
+
+  @include r(1023) {
+    max-width: 445px;
+  }
+
+  @include r(767) {
+    margin-bottom: 0px;
+    max-width: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.unique-list__item {
+  padding-left: 160px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include r(767) {
+    max-width: 290px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-top: 160px;
+    background-position: 50% 15px;
+  }
+
+  @include r(639) {
+    max-width: 220px;
+    background-color: #fff;
+  }
+
+  @include r(479) {
+    max-width: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    top: 0px;
+    left: 116px;
+    background: url("../img/bulit.png") no-repeat 50%;
+    background-size: contain;
+
+    @include r(767) {
+      top: 0px;
+      left: 195px;
+    }
+
+    @include r(639) {
+      left: 160px;
+    }
+
+    @include r(479) {
+      left: calc(50% + 50px);
+    }
+  }
+}
+
+.unique-list__item:nth-child(1) {
+  background-image: url("../img/unique1.png");
+
+  @include r(767) {
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  @include r(479) {
+    margin-bottom: 20px;
+    order: 0;
+  }
+}
+
+.unique-list__item:nth-child(2) {
+  background-image: url("../img/unique2.png");
+}
+
+.unique-list__item:nth-child(3) {
+  background-image: url("../img/unique3.png");
+}
+
+.unique-list__item:last-of-type {
+  margin-bottom: 0;
+
+  @include r(767) {
+    margin-bottom: 0;
+  }
+
+  .unique-list__text-wrap {
+    border-bottom: none;
+  }
+}
+
+.unique-list__text-wrap {
+  height: 140px;
+  min-height: 160px;
+  // Setting height to a value less then min-height fixes the align-items: center issue in IE11, but the container still sets its size based on min-height.
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dfe2e3;
+
+  @include r(767) {
+    min-height: auto;
+    height: auto;
+    border-bottom: none;
+  }
+}
+
+.unique-list__text {
+  font-size: 20px;
+  line-height: 1.3;
+  line-height: 26px;
+
+  @include r(1023) {
+    font-size: 18px;
+  }
+
+  @include r(767) {
+    text-align: center;
+  }
+
+  @include r(639) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.unique__img {
+  max-width: 333px;
+  position: absolute;
+  top: 40px;
+  left: 152px;
+
+  @include r(1219) {
+    left: 120px;
+  }
+
+  @include r(1023) {
+    max-width: 265px;
+    top: 83px;
+    left: 20px;
+  }
+
+  @include r(767) {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  @include r(639) {
+    max-width: 200px;
+  }
+}
+
+.unique__quality {
+  max-width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 401px;
+
+  @include r(1219) {
+    left: 367px;
+  }
+
+  @include r(1023) {
+    max-width: 74px;
+    top: 40px;
+    left: 217px;
+  }
+
+  @include r(767) {
+    top: -10px;
+    left: 380px;
+  }
+
+  @include r(639) {
+    width: 60px;
+    left: 280px;
+  }
+
+  @include r(479) {
+    max-width: 60px;
+    left: calc(50% + 50px);
+  }
+}
+
+.unique__certificate {
+  position: absolute;
+  left: 96px;
+  top: 23px;
+  max-width: 149px;
+  z-index: -10;
+
+  @include r(1219) {
+    left: 65px;
+  }
+
+  @include r(1023) {
+    max-width: 110px;
+    left: 72px;
+  }
+
+  @include r(767) {
+    top: -5px;
+    left: 140px;
+  }
+
+  @include r(639) {
+    display: none;
+  }
+}
+
+.unique__footer {
+  margin-top: 40px;
+
+  @include r(767) {
+    margin-top: 20px;
+  }
+}
+
+.unique__footer-text {
+  text-align: center;
+  font-size: 30px;
+
+  @include r(1023) {
+    font-size: 28px;
+  }
+
+  @include r(767) {
+    font-size: 26px;
+  }
+
+  @include r(639) {
+    font-size: 24px;
+  }
+
+  @include r(479) {
+    font-size: 20px;
+  }
+}

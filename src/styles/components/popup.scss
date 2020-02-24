@@ -1,0 +1,117 @@
+.my-popup {
+  .main__form {
+    @include r(1023) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__action {
+    @include r(1299) {
+      left: auto;
+      right: -61px;
+    }
+
+    @include r(999) {
+      top: -62px;
+      right: -12px;
+    }
+  }
+
+  .form__approved {
+    @include r(1299) {
+      padding: 3px 0 3px 60px;
+      background-position: 12px 50%;
+    }
+
+    @include r(999) {
+      padding-left: 40px;
+      background-position: 0 50%;
+    }
+  }
+}
+
+.my-popup__wrap {
+  width: 770px;
+  margin: 0 auto;
+  padding: 40px 24px 40px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #fff;
+
+  @include r(999) {
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .reviews-amount {
+    display: none;
+  }
+}
+
+.my-popup__pack {
+  max-width: 311px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.my-popup__left {
+  display: flex;
+  align-items: flex-end;
+
+  @include r(999) {
+    display: none;
+  }
+}
+
+.my-popup__right {
+  margin-left: 50px;
+
+  @include r(999) {
+    margin-left: 0;
+  }
+}
+
+.my-popup__quality {
+  position: absolute;
+  right: 0px;
+  top: -55px;
+}
+
+.ever-popup {
+  z-index: 121 !important;
+}
+
+.ever-popup__inner {
+  max-width: 770px !important;
+  margin-top: 0 !important;
+
+  @include r(999) {
+    width: 300px !important;
+  }
+
+  @media (max-height: 699px) {
+    margin-top: 40px !important;
+  }
+}
+
+.ever-popup__close:after,
+.ever-popup__close:before {
+  top: 20px !important;
+  right: -40px !important;
+  height: 4px !important;
+  border-radius: 20px;
+
+  @include r(999) {
+    top: 15px !important;
+    right: 0 !important;
+  }
+}
+
+.ever-popup.show {
+  display: flex !important;
+
+  @media (max-height: 699px) {
+    display: block !important;
+  }
+}

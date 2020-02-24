@@ -1,0 +1,37 @@
+.promo {
+  margin-bottom: 115px;
+  position: relative;
+
+  @include r(1023) {
+    margin-bottom: 0px;
+  }
+}
+
+.promo__pay {
+  padding: 37px 10px 0px;
+  position: fixed;
+  left: 0;
+  bottom: 88px;
+  width: 90px;
+  height: 80px;
+  font-size: 10px;
+  color: #ffffff;
+  line-height: 1.2;
+  border-top-right-radius: 100%;
+  background: #299e36 url("../img/icon-sberbank.png") no-repeat 10px 11px;
+  z-index: 100;
+
+  @media (min-width: 1280px) and (max-width: 1400px) {
+    width: 80px;
+    height: 70px;
+    font-size: 8px;
+  }
+
+  @include r(767) {
+    bottom: 55px;
+  }
+
+  @include r(639) {
+    display: none;
+  }
+}

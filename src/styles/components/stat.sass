@@ -1,0 +1,141 @@
+.stat
+	padding: 84px 0 90px
+	&-info
+		margin-top: 59px
+		display: flex
+		justify-content: center
+		+r(1219)
+			margin-top: 40px
+		+r(1023)
+			margin-top: 15px
+		+r(479)
+			flex-direction: column
+		&-box
+			width: 33.33%
+			text-align: center
+			+r(767)
+				width: 100%
+			&:not(:last-child)
+				+r(479)
+					margin-bottom: 8px
+			&--border
+				position: relative
+				&::before, &::after
+					content: ''
+					position: absolute
+					top: -8px
+					width: 1.4px
+					height: 150px
+					background-color: #dfdfdf
+					+r(1023)
+						top: 6px
+						height: 110px
+					+r(767)
+						display: none
+				&::before
+					left: 0
+				&::after
+					right: 0
+		&__percent
+			color: #529e29
+			font-size: 100px
+			font-weight: 700
+			line-height: 75px
+			opacity: 1
+			+r(1219)
+				font-size: 95px
+				line-height: 70px
+			+r(1023)
+				font-size: 80px
+				line-height: 1
+			+r(767)
+				font-size: 67px
+		&__text
+			color: #332f2f
+			font-size: 22px
+			font-weight: 500
+			line-height: 24px
+			max-width: 296px
+			margin: 24px auto 0
+			+r(1219)
+				margin-top: 20px
+				font-size: 20px
+				line-height:  normal
+				max-width: 270px
+			+r(1023)
+				font-size: 17px
+				margin-top: 0
+				max-width: 227px
+			+r(639)
+				font-size: 17px !important
+			+r(479)
+				max-width: 305px
+	&__notes
+		text-align: center
+		color: #666666
+		font-size: 17px
+		font-style: italic
+		line-height: 1.15
+		margin-top: 34px
+		max-width: 490px
+		margin-left: auto
+		margin-right: auto
+		+r(1219)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 25px
+		+r(767)
+			margin-top: 15px
+	&-sert
+		margin-top: 56px
+		display: flex
+		justify-content: space-between
+		max-width: 568px
+		margin-left: auto
+		margin-right: auto
+		padding: 0 19px 14px
+		position: relative
+		z-index: 0
+		+r(1219)
+			margin-top: 50px
+		+r(1023)
+			margin-top: 32px
+		+r(767)
+			margin-top: 25px
+		+r(639)
+			margin-top: 20px
+			justify-content: center
+			padding: 0
+		+r(479)
+			margin-top: 15px
+		img
+			+r(639)
+				margin: 5px
+			+r(479)
+				width: 31%
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			background: url(../img/sert-bottom.svg) no-repeat center
+			width: 100%
+			height: 20px
+			background-size: contain
+			z-index: -1
+			+r(639)
+				display: none
+@media (max-width: 767px) and (min-width: 480px)
+	.stat-info-box
+		text-align: left
+		display: flex
+		align-items: center
+		max-width: 510px
+		margin-left: auto
+		margin-right: auto
+	.stat-info
+		flex-direction: column
+	.stat-info__text
+		max-width: 100%
+		margin: 0 0 0 15px
+		font-size: 19px
