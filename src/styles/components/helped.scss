@@ -1,17 +1,18 @@
 .helped {
     &-block {
-        padding: 60px 0px;
+        padding: 50px 0px;
     }
     &__title {
         max-width: 900px;
-        margin-bottom: 25px;
         padding-top: 23px;
+        margin: 0 auto 34px;
     }
     &__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+        flex-grow: 1;
     }
     .item {
         max-width: 369px;
@@ -19,7 +20,35 @@
             margin-right: 10px;
         }
         &__img {
+            position: relative;
             margin-bottom: 16px;
+            img {
+                display: block;
+                border-radius: 5px;
+                min-width: 368px;
+                max-height: 176px;
+            }
+            &::before,
+            &:after {
+                position: absolute;
+                width: 50%;
+                height: 25px;
+                bottom: 0;
+                text-align: center;
+                color: #fff;
+                font-size: 20px;
+                line-height: 27px;
+            }
+            &::before {
+                content: "До";
+                background-color: #f77d2f;
+                left: 0;
+            }
+            &::after {
+                content: "После";
+                background-color: #48afcd;
+                right: 0;
+            }
         }
         &__person {
             text-align: center;
