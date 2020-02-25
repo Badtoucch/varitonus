@@ -80,5 +80,10 @@
                 font-size: 16px;
             }
         }
+        &__bullets {
+            &-img:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
     }
 }
