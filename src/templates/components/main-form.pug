@@ -1,27 +1,37 @@
 .main__form
-    p.form__approved    ОДОБРЕНО
-        br
-        | МИНЗДРАВОМ РФ
-    form.form.x_order_form(action="/submit" method="post")
-        .form__action
-            span.form__action-text.text-black Акция
-        .form__top
-            p.form__attention   Внимание!
-            p.form__term    Только сегодня 
-                span.date-0(data-format="dd month")
-                span.x_price_previous
-                span.x_price_current
-                span.x_currency грн
-            p.form__free.text-bold БЕСПЛАТНО!*
-        .form__input-wrap.form__input-wrap--name
-            input.form__input.form__input--name(type="text" name="name" placeholder="Мое имя" required)
-        .form__input-wrap.form__input-wrap--tel
-            input.form__input.form__input--tel(type="tel" name="phone" placeholder="Мой телефон" required)
-        button.form__button.btn Получить
-            .form__button-free бесплатно
-        p.form__note    *при оформлении заказа
-    p.form__secure Ваши данные защищены!
-    .reviews-amount.form__reviews-amount
-        a.reviews-amount__wrap(href="#reviews")
-            span.reviews-amount__star
-            span.reviews-amount__link 142 отзыва
+	p.form__approved ОДОБРЕНО
+		br
+		| МИНЗДРАВОМ РФ
+	form.form.x_order_form(action="/submit" method="post")
+		.form__action
+			span.form__action-text.text-black  -50%
+		.form__top
+			p.form__term  Только сегодня
+				br
+				span.date-0.nowrap(data-format="dd month")
+			.form__price
+				.form__price-val
+					h5.form__price-title Старая цена
+					p.form__price-before
+						span.x_price_previous.form__price-before_line 1980
+						span.x_currency.form__price-before_size руб
+				.form_before
+				.form__price-val
+					h5.form__price-title.form__price-title--new Новая цена
+					p.form__price-after
+						span.x_price_current 990
+						span.x_currency.form__price-after_size руб
+		.form__input-wrap.form__input-wrap--name
+			input.form__input.form__input--name(type="text" name="name" placeholder="Мое имя" required)
+		.form__input-wrap.form__input-wrap--tel
+			input.form__input.form__input--tel(type="tel" name="phone" placeholder="Мой телефон" required)
+		button.form__button.btn Заказать
+			.form__button-free со скидкой
+		p.form__note  *при оформлении заказа
+		p.form__online Сейчас на сайте 20 человек
+	p.form__secure Ваши данные защищены!
+	.reviews-amount.form__reviews-amount
+		a.reviews-amount__wrap(href="#reviews")
+			span.reviews-amount__star
+			span.reviews-amount__link 142 отзыва
+						
