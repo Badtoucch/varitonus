@@ -1,8 +1,9 @@
 .header {
   background-color: #fff;
-
+position: relative;
+z-index: 5;
   &__wrap {
-    margin-bottom: 80px;
+    margin-bottom: 17px;
     padding: 17px 0 14px;
     display: flex;
     align-items: center;
@@ -28,8 +29,9 @@
 }
 
 .header__info {
-  display: flex;
-
+	display: flex;
+	margin-left: auto;
+align-items: center;
   @include r(1023) {
     display: none;
   }
@@ -48,20 +50,18 @@
 }
 
 .header__btn {
-  max-width: 180px;
-  height: 42px;
-  margin-left: 120px;
-  border-radius: 100px;
+  max-width: 140px;
+  height: 40px;
+  margin-left: 22px;
+  border-radius: 10px;
   font-size: 18px;
-
+	border-bottom: 2px solid #e36622;
   @include r(1219) {
     margin-left: 0px;
   }
 }
 
-.info__item {
-  position: relative;
-}
+
 
 .info__link {
   display: flex;
@@ -74,8 +74,8 @@
 }
 
 .info__item:not(:last-of-type) {
-  padding-right: 40px;
-  margin-right: 40px;
+  padding-right: 49px;
+  margin-right: 48px;
   border-right: 1px solid #e1e1e1;
 
   @include r(1219) {
@@ -87,4 +87,8 @@
 .info__icon {
   margin-right: 13px;
   flex-shrink: 0;
+}
+
+.menu__body .info__timer{
+	display: none;
 }

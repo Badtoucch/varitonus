@@ -1,0 +1,38 @@
+.info__link:hover{
+	text-decoration: none;
+}
+.info__text{
+	position: relative;
+	&:before{
+		content: '';
+	position: absolute;
+	width: 99%;
+	height: 2px;
+	bottom: -1px;
+	left: 2px;
+	background: url('../img/point.png') repeat-x left center;
+	background-size: 5px 5px;
+	transition: .3s;
+	}
+}
+.info__link:hover  .info__text:before{
+	opacity: 0;
+}
+
+.info__item {
+  position: relative;
+}
+.info__timer{
+	display: flex;
+	align-items: center;
+}
+.info__timer-title{
+	max-width: 110px;
+	font-size: 14px !important;
+	color: #222222 !important;
+	margin-right: 10px;
+}
+.info__item .timer__cell{
+    padding: 5.5px 10.65px;
+}
+
