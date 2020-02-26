@@ -41,7 +41,7 @@
 
   @include r(999) {
     width: 300px;
-    padding: 10px 0;
+    padding: 10px 0 15px;
   }
 
   .reviews-amount {
@@ -74,8 +74,8 @@
 
 .my-popup__quality {
   position: absolute;
-  right: 0px;
-  top: -55px;
+  left: -33px;
+  top: -34px;
 }
 
 .ever-popup {

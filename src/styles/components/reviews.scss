@@ -1,5 +1,10 @@
 .reviews {
-  padding: 85px 0;
+	padding: 85px 0;
+	.title br{
+		@include r(1023) {
+		display: none;
+		 }
+	}
   &-content {
     margin-top: 49px;
     border-radius: 10px;
@@ -69,12 +74,12 @@
   &-list {
     margin-top: 30px;
     overflow: hidden;
-		height: 490px;
+		height: 545px;
 		@include r(1023) {
-			height: 480px;
+			height: 530px;
 		 }
 		 @include r(767) {
-			height: 470px;
+			height: 490px;
 		 }
     &-item {
       padding-bottom: 42px;
