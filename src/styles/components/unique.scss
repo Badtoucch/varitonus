@@ -159,7 +159,7 @@
     }
     @include r(1023) {
         max-width: 265px;
-        top: 83px;
+        top: 26px;
         left: 20px;
     }
     @include r(767) {
@@ -179,9 +179,7 @@
     top: 48px;
     left: 98px;
     z-index: 3;
-    @include r(1219) {
-        left: 367px;
-    }
+    @include r(1219) {}
     @include r(1023) {
         max-width: 74px;
         top: 40px;
