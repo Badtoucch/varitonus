@@ -1,12 +1,12 @@
 .reviews {
-	padding: 85px 0;
+	padding: 92px 0 100px;
 	.title br{
 		@include r(1023) {
 		display: none;
 		 }
 	}
   &-content {
-    margin-top: 49px;
+    margin-top: 41px;
     border-radius: 10px;
     border: 1px solid #efefef;
     background-color: #f4f4f4;
