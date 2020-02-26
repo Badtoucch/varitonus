@@ -16,37 +16,38 @@
 		margin-top: 85px
 		display: flex
 		counter-reset: order-list
-		justify-content: center
+		justify-content: space-between
 		+r(1219)
 			margin-top: 67px
 		+r(1023)
-			margin-top: 40px
+			margin-top: 20px
+			flex-wrap: wrap
+			justify-content: center
 		+r(767)
 			margin-top: 10px
 			flex-wrap: wrap
 	&-box
-		max-width: 350px
+		max-width: 273px
 		display: flex
 		flex-direction: column
 		align-items: center
+		+r(1219)
+			width: 24%
 		+r(1023)
 			max-width: 260px
+			width: 100%
+			margin-top: 20px
 		+r(767)
 			max-width: 230px
 			width: 100%
 			margin: 30px 0px 10px !important
-		&:nth-child(2n+1)
-			margin-top: 40px
-			+r(1219)
-				margin-top: 30px
-			+r(1023)
-				margin-top: 0
 		&:not(:last-child)
-			margin-right: 109px
+			margin-right: 37px
 			+r(1219)
-				margin-right: 60px
+				margin-right: 20px
 			+r(1023)
-				margin-right: 12px
+				margin-right: 0px
+				margin-bottom: 15px
 			+r(767)
 				margin-right: 0
 		&:last-child
@@ -55,13 +56,13 @@
 		&__img
 			border-radius: 16px
 			background-color: #faf6f8
-			width: 270px
-			height: 270px
+			width: 250px
+			height: 250px
 			display: flex
 			justify-content: center
 			align-items: center
 			position: relative
-			+r(1023)
+			+r(1219)
 				width: 200px
 				height: 200px
 			img
@@ -71,18 +72,18 @@
 				counter-increment: order-list
 				content: counter(order-list)
 				position: absolute
-				top: -40px
+				top: -36px
 				left: 50%
 				transform: translateX(-50%)
-				width: 48px
-				height: 48px
-				background-color: #915169
+				width: 46px
+				height: 46px
+				background-color: #48afcd
 				color: #ffffff
-				font-size: 25px
+				font-size: 23px
 				font-weight: 700
 				line-height: 1
 				border-radius: 50%
-				box-shadow: 2px 2px 0 0 #783850
+				box-shadow: 2px 2px 0 0 #288dab
 				display: flex
 				justify-content: center
 				align-items: center
@@ -97,39 +98,42 @@
 					position: absolute
 					left: 50%
 					top: 50%
-					transform: translate(-50%, -50%)
+					transform: translate(-37%, -50%)
 					background-image: linear-gradient(90deg, transparent, transparent 50%, #f8f8f8 50%, #f8f8f8 100%), linear-gradient(90deg, #dddcdc, #dddcdc, #dddcdc, #dddcdc, #dddcdc);
 					background-size: 20px 3px, 100% 3px
 					height: 2px
-					width: 927px
+					width: 1111px
 					z-index: -1
-					+r(1023)
+					+r(1219)
 						display: none
 		&__title
-			margin-top: 35px
-			font-size: 22px
+			margin-top: 30px
+			font-size: 20px
 			font-weight: 700
 			line-height: 1
 			text-align: center
 			+r(1219)
-				margin-top: 20px
-				font-size: 21px
+				margin-top: 15px
+				font-size: 20px
 			+r(1023)
 				font-size: 17px
 		&__text
 			margin-top: 5px
-			color: #444444
-			font-size: 18px
-			line-height: 24px
+			color: #666
+			font-size: 17px
+			line-height: 1.2
 			width: 100%
 			text-align: center
+			+r(1219)
+				font-size: 16px
 			+r(1023)
 				font-size: 16px
 				line-height: normal
 			+r(767)
 				letter-spacing: -.2px;
 	&-pack
-		max-width: 159px
+		max-width: 128px
 		+r(1023)
 			max-width: 110px !important
-		
+.order-legs
+	justify-content: flex-end
