@@ -1,6 +1,7 @@
 .use
 	padding: 88px 0 0
 	background: url(../img/use-bg.jpg) no-repeat center/cover
+
 	+r(1219)
 		padding-bottom: 0 !important
 	+r(1023)
@@ -37,6 +38,7 @@
 		// margin-left: 68px
 		+r(1219)
 			margin-left: 0
+			left: 0
 		+r(1023)
 			max-width: 250px
 			left: 0
@@ -78,13 +80,17 @@
 				width: 50px
 				height: 50px
 	&-list
+		display: flex
 		max-width: 550px
 		padding-right: 30px
 		counter-reset: use-list
 		margin-left: 30px
 		align-items: center
-    	display: flex
-    	flex-wrap: wrap
+		flex-wrap: wrap
+
+		+r(1219)
+			max-width: 400px
+			padding-right: 0
 		+r(1023)
 			margin-left: 10px
 		+r(767)
@@ -146,11 +152,10 @@
 				font-size: 18px
 				margin-left: 15px
 	&-bottom
-		margin-top: 25px
+		// margin-top: 25px
 		display: flex
 		justify-content: flex-end
 		width: 100%
-		overflow: hidden
 		position: relative
 		+r(1219)
 			margin-top: 30px
@@ -167,12 +172,14 @@
 			display: flex
 			justify-content: flex-end
 			align-items: center
+			margin-top: 25px
+			margin-bottom: 9px
 			+r(1023)
 				justify-content: space-between
 			+r(767)
 				flex-direction: column
 		&-recommendation
-			margin-top: 24px
+			margin: 24px 0
 			display: flex
 			justify-content: flex-end
 			+r(1219)
@@ -188,15 +195,19 @@
 			padding-left: 0
 		&-img
 			max-width: 265px
+			max-height: 330px
 			flex-shrink: 0
 			position: absolute
-			top: 9px
+			bottom: 0
 			left: 10px
 			z-index: 1
+			overflow: hidden
 			+r(1219)
-				max-width: 240px
+			max-height: 296px
 			+r(1023)
 				display: none
+			img
+				width: 265px
 		&__name
 			color: #000000
 			font-size: 20px
@@ -219,7 +230,7 @@
 		&-clinical
 			max-width: 455px
 			padding: 6px 40px 9px 39px
-			margin-right: 119px
+			margin-right: 168px
 			display: flex
 			align-items: center
 			justify-content: space-between
@@ -234,7 +245,7 @@
 	&-certificat-img
 		left: 173px
 		position: absolute
-		top: 111px
+		top: 35px
 		max-width: 117px
 		+r(1023)
 			display: none
@@ -304,3 +315,7 @@
 	.use-recommendation-item:not(:last-child)
 		margin-right: 0
 		margin-bottom: 10px
+
+.use__bottom
+	background-color: #ebebeb
+	
