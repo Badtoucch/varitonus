@@ -1,5 +1,10 @@
 .fakes
 	padding: 85px 0 80px
+	&__attention-color
+		color: #d4123b
+	.title
+		+rm(1220)
+			font-size: 56px  
 	&-content
 		margin-top: 55px
 		display: flex
@@ -8,8 +13,9 @@
 		+r(1023)
 			flex-direction: column
 			align-items: center
-			margin-top: 22px
+			margin-top: 50px
 	&-box
+		padding-left: 29px
 		max-width: 737px
 		+r(1219)
 			max-width: 620px
@@ -18,6 +24,7 @@
 			max-width: 100%
 			margin-top: 15px
 			text-align: center
+			padding-left: 0px
 		&__text
 			color: #444444
 			font-size: 18px
@@ -29,13 +36,12 @@
 				+r(1023)
 					display: none
 		&__code
-			margin-top: 27px
 			color: #ffffff
 			font-size: 20px
 			font-weight: 500
 			line-height: 26px
 			border-radius: 5px
-			background-color: #915169
+			background-color: #46b0ce
 			max-width: 700px
 			padding: 14px 57px 14px 26px
 			+r(1219)
@@ -60,6 +66,8 @@
 			font-size: 16px
 			font-weight: 400
 			line-height: 24px
+			span:not(:last-child)
+				margin-bottom: 36px
 			+r(1219)
 				line-height: 21px
 				max-width: 620px
@@ -72,6 +80,7 @@
 				margin-right: auto
 			b
 				margin-top: 15px
+				font-weight: bold
 				display: block
 				color: #000
 				+r(1023)
@@ -79,9 +88,13 @@
 	&-pack
 		margin-left: 14px
 		position: relative
-		max-width: 304px
+		left: 6px
+		max-width: 260px
+		top: -8px
+    	
+
 		+r(1219)
-			max-width: 290px
+			// max-width: 290px
 		+r(1023)
 			max-width: 240px
 		+r(479)
@@ -90,18 +103,19 @@
 			margin-left: -50px
 		&__num
 			position: absolute
-			top: -11px
-			right: -126px
-			width: 196px
-			height: 196px
+			top: -31px
+			right: -124px
+			width: 215px
+			height: 215px
 			display: flex
 			justify-content: center
 			background: url(../img/fakes-circle.png) no-repeat center
+			background-size: cover
 			display: flex
 			justify-content: center
 			align-items: center
 			color: #272626
-			font-size: 14px
+			font-size: 16px
 			font-weight: 900
 			text-transform: uppercase
 			letter-spacing: 0.8px
