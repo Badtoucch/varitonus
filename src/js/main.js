@@ -2,6 +2,7 @@ import "./helpers/postDate";
 import scrollSmooth from "./helpers/smooth-scroll.js";
 // import example from './modules/example.js';
 
+import mainForm from "./modules/main-form.js";
 import menu from "./modules/menu.js";
 import reviews from "./modules/reviews.js";
 import people from "./modules/people.js";
@@ -15,7 +16,8 @@ function main() {
   menu();
  	reviews();
 	people();
-  clients();
+	clients();
+	mainForm();
   footer();
   stat();
   wPopup();

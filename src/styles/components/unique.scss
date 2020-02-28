@@ -1,12 +1,16 @@
 .unique {
     padding: 90px 0;
-    background-color: #f4f4f4;
+		background-color: #f4f4f4;
+		.btn {
+			max-width: 224px;
+			margin: 30px auto 0;
+			@include r(767) {
+				margin-top: 15px;
+			}
+	}
+
 }
 
-.btn {
-    max-width: 224px;
-    margin: 30px auto 0;
-}
 
 .unique__title {
     max-width: 1070px;
