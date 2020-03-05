@@ -3,6 +3,7 @@
 	padding: 9px 0 3px 60px;
 	font-size: 14px;
 	color: #222;
+	font-weight: 400;
 	line-height: 1.3;
 	background: url(../img/ministry.png) no-repeat 12px 16%;
 
@@ -22,7 +23,7 @@
   position: absolute;
   background: url("../img/action-bg.png") no-repeat;
 
-  @include r(1299) {
+  @include r(1320) {
     left: -50px;
   }
 
@@ -72,13 +73,18 @@
   width: 100%;
   max-width: 270px;
   min-width: 270px;
-  padding: 23px 20px 0px;
-  background-color: #fff;
+	background-color: #48afcd;
+	border: 3px solid #48afcd;
   border-radius: 5px;
   border: 3px solid $content-color;
   text-align: center;
   position: relative;
   box-shadow: 0 21px 25px rgba(125, 133, 134, 0.15);
+}
+.form__top{
+	background-color: #fff;
+	padding: 23px 20px 18px;
+	border-radius: 3px 3px 0 0;
 }
 
 .form__input-wrap {
@@ -93,11 +99,10 @@
   border-radius: 10px;
   border: 1px solid #dfe2e3;
   position: relative;
-  font-size: 16px;
+	font-size: 16px
 }
 
 .form__input:hover {
-  cursor: pointer;
   box-shadow: inset 2px 3px 4px rgba(2, 3, 3, 0.1);
 }
 
@@ -109,7 +114,7 @@
   left: 22px;
   top: 50%;
   transform: translateY(-50%);
-  background: url("../img/icon-name.png") no-repeat 50%;
+  background: url("../img/name.svg") no-repeat 50%;
   z-index: 1;
 }
 
@@ -161,18 +166,21 @@
 }
 
 .form__note {
-  text-align: center;
+	text-align: center;
+	font-size: 14px;
+	color: #555;
 }
 
 .form__secure {
   margin-top: 16px;
   padding: 5px 0 5px 60px;
   font-size: 15px;
-  background: url("../img/icon-secure.png") no-repeat 24px 50%;
+	background: url("../img/icon-secure.png") no-repeat 24px 50%;
+	color: #403737;
 }
 
 .promo .form__reviews-amount {
-  margin-top: 23px;
+  margin-top: 10px;
   padding-left: 37px;
 
   &:before {
@@ -186,7 +194,7 @@
   @include r(1023) {
     margin-top: 0;
     position: absolute;
-    left: -254px;
+    left: -261px;
     bottom: 60px;
   }
 
@@ -198,7 +206,13 @@
   @include r(639) {
     margin-top: 15px;
     position: relative;
-    left: 0;
+		left: 0;
+		padding-left: 0;
+  }
+}
+.reviews-amount__wrap{
+	@include r(639) {
+    justify-content: center;
   }
 }
 
@@ -322,4 +336,29 @@
 		height: 15px;
 		background:url(../img/online-icon.png) center;
 	}
+}
+.online-people, .online-sold{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p {
+		font-size: 15px;
+		color: #fff;
+		margin-left: 8px;
+	}
+}
+
+.online-wrapper{
+	overflow: hidden;
+	height: 15px;}
+
+.online-block{
+	padding: 16px 5px 12px;}
+	.reviews-amount__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }

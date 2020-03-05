@@ -1,6 +1,7 @@
 .header__content {
   display: flex;
-  justify-content: flex-end;
+	justify-content: flex-end;
+	position: relative;
 
   @include r(1023) {
     flex-direction: column;
@@ -199,6 +200,10 @@ margin-right: 8px;
 		display: block;
 		max-width: 315px;
 		}
+		@include r(479) {
+
+			max-width: 280px;
+			}
 }
 
 .main__item {
@@ -214,8 +219,8 @@ margin-right: 8px;
   }
 
   @include r(479) {
-    padding: 7px 10px 7px 40px;
-    background-size: 30px;
+    padding: 0px 10px 7px 40px;
+    background-size: 34px;
   }
 }
 
@@ -263,6 +268,11 @@ margin-right: 8px;
     @include r(1023) {
       display: none;
     }
+	}
+	br {
+    @include r(479) {
+      display: block;
+    }
   }
 
   @include r(479) {
@@ -298,7 +308,9 @@ margin-right: 8px;
 	}
   @include r(1023) {
     position: absolute;
-    bottom: -603px;
+		bottom: -603px;
+		padding-left: 15px;
+		width: 238px;
   }
 
   @include r(767) {
@@ -328,7 +340,8 @@ margin-right: 8px;
 .main__count {
   position: absolute;
   color: #f1740f;
-  font-size: 32px;
+	font-size: 32px;
+	line-height: 1;
   top: 50%;
   transform: translateY(-50%);
   right: 19px;
@@ -342,12 +355,10 @@ margin-right: 8px;
   display: flex;
   position: absolute;
   bottom: -95px;
-  left: -3px;
+  right: 20px;
 
   @include r(1023) {
-    left: 50%;
-    bottom: -659px;
-    transform: translateX(-50%);
+  bottom: 30px;
   }
 
   @include r(639) {

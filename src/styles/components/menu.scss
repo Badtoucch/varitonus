@@ -1,7 +1,7 @@
 .menu__button {
   display: none;
-  position: fixed;
-  top: 80px;
+  position: absolute;
+  top: 75px;
   width: 42px;
   height: 42px;
   align-items: center;
@@ -25,6 +25,9 @@
 
   @include r(1023) {
     display: flex;
+	}
+	@include r(479) {
+    top: 80px;
   }
 }
 

@@ -21,17 +21,29 @@
 					p.form__price-after
 						span.x_price_current 990
 						span.x_currency.form__price-after_size руб
-		.form__input-wrap.form__input-wrap--name
-			input.form__input.form__input--name(type="text" name="name" placeholder="Мое имя" required)
-		.form__input-wrap.form__input-wrap--tel
-			input.form__input.form__input--tel(type="tel" name="phone" placeholder="Мой телефон" required)
-		button.form__button.btn Заказать
-			.form__button-free со скидкой
-		p.form__note  *при оформлении заказа
-		p.form__online Сейчас на сайте 20 человек
+						span.form__price-after_size *
+			.form__input-wrap.form__input-wrap--name
+				input.form__input.form__input--name(type="text" name="name" placeholder="Мое имя" required)
+			.form__input-wrap.form__input-wrap--tel
+				input.form__input.form__input--tel(type="tel" name="phone" placeholder="Мой телефон" required)
+			button.form__button.btn Заказать
+				.form__button-free со скидкой
+			p.form__note  *при оформлении заказа
+		.online-block
+			.online-wrapper
+				.online-people 
+					img(src="img/eye.png" alt="online")
+					p Сейчас на сайте 
+						span.text-bold.online-dynamic 27  
+						|   человек
+				.online-sold
+					img(src="img/eye.png" alt="online")
+					p
+						span.text-bold 116 
+						| продаж за последний час
 	p.form__secure Ваши данные защищены!
 	.reviews-amount.form__reviews-amount
 		a.reviews-amount__wrap(href="#reviews")
-			span.reviews-amount__star
-			span.reviews-amount__link 142 отзыва
+			.reviews-headStar(style={'width':'112px'})
+			.reviews-amount 142 отзыва
 						

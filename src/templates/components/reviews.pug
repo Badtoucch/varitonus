@@ -5,7 +5,9 @@ section.reviews.block(id='reviews')
 			span.product-color VARITONUS
 		.reviews-content
 			.reviews-panel
-				.reviews-amount 142 отзыва
+				.star-box
+					.reviews-headStar(style={'width': '112px'})
+					.reviews-amount 142 отзыва
 				button.btn.reviews-btn Оставить свой отзыв
 			.feedback
 				.feedback-form
@@ -25,7 +27,7 @@ section.reviews.block(id='reviews')
 							img.star4(src='img/star.png')
 							img.star5(src='img/star.png')
 					.feedback-text
-						textarea.feedback-text-input.input__val-3(name="" placeholder='Ваше сообщение')
+						textarea.feedback-text-input.input__val-3(name="" placeholder='Ваш отзыв')
 					.feedback-btn.btn.reviews-btn Отправить
 				.feedback-modal
 					.feedback-modal__inner
@@ -36,7 +38,7 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar А
 						.reviews-item-title
-							h4.reviews-item__name Андрей М.
+							h4.reviews-item__name Андрей
 							.reviews-item__rating
 						.reviews-item__date.date-1
 					.reviews-item__text Я с юности боялся проблем с сердцем и давлением. И папа и дед, которого я даже не знал - все мужчины  у нас сердечники. С юности старался вести  с организмом, у которого есть предрасположенность к болезни.  Когда после 30 у меня все таки начало подниматься давление, я стал пить Тоносил. После курса сходил к своему кардиологу и он мне сказал, что с сейчас у меня больше шансов быть сожранным динозавром, чем заработать инфаркт. Так что, определенно буду регулярно повторять курс. 
@@ -44,25 +46,13 @@ section.reviews.block(id='reviews')
 					.reviews-assessment
 						.like 12
 						.dislike 0
-				li.reviews-list-item
-					.reviews-item-top
-						.reviews-item-avatar Е
-						.reviews-item-title
-							h4.reviews-item__name Евгения Т.
-							.reviews-item__rating(style={'width': '90px'})
-						.reviews-item__date.date-2
-					.reviews-item__text Я долго не могла понять, почему постоянно болела голова. Иногда вообще пластом лежала, приходилось с работы отпрашиваться. О том, что это гипертония, узнала случайно - мама предположила.  Ну я и померила давление - 150/114. Когда давление выросло и стало постоянно держаться 140/100, то пришлось пить таблетки ежедневно.Тоносил.
-					button.reviews-item__btn Прочитать весь отзыв
-					.reviews-assessment
-						.like 17
-						.dislike 3
 				li.reviews-list-item.reviews--full
 					.reviews-item-top
 						.reviews-item-avatar А
 						.reviews-item-title
-							h4.reviews-item__name Андрей Щ.
+							h4.reviews-item__name Андрей 
 							.reviews-item__rating
-						.reviews-item__date.date-3
+						.reviews-item__date.date-2
 					.reviews-item__text Классная штука. Варкоза у меня нет, но когда вечером ноги болят после работы, то я мажу Варилиф и боль уходит.
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -70,23 +60,11 @@ section.reviews.block(id='reviews')
 						.dislike 0
 				li.reviews-list-item.reviews--full
 					.reviews-item-top
-						.reviews-item-avatar M
-						.reviews-item-title
-							h4.reviews-item__name Марина К.
-							.reviews-item__rating(style={width: '60px'})
-						.reviews-item__date.date-3
-					.reviews-item__text На сам Варилиф нареканий нет, помогает хорошо. Но доставка подкачала, ехал он на два дня дольше, чем было оговорено, а это критично. Подучите своих менеджеров!!
-					button.reviews-item__btn Прочитать весь отзыв
-					.reviews-assessment
-						.like 31
-						.dislike 12
-				li.reviews-list-item.reviews--full
-					.reviews-item-top
 						.reviews-item-avatar E
 						.reviews-item-title
-							h4.reviews-item__name Евгений Б.
+							h4.reviews-item__name Евгений
 							.reviews-item__rating
-						.reviews-item__date.date-4
+						.reviews-item__date.date-3
 					.reviews-item__text Заказывал для жены, а то на боль в ногах жаловалась. Мажет, на боль не жалуется больше.
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -94,23 +72,11 @@ section.reviews.block(id='reviews')
 						.dislike 0
 				li.reviews-list-item.reviews--full
 					.reviews-item-top
-						.reviews-item-avatar А
-						.reviews-item-title
-							h4.reviews-item__name Александра П.
-							.reviews-item__rating(style={width: '80px'})
-						.reviews-item__date.date-6
-					.reviews-item__text Вены светлеют через три недели и не раньше, но нужно мазать каждый день.
-					button.reviews-item__btn Прочитать весь отзыв
-					.reviews-assessment
-						.like 19
-						.dislike 3
-				li.reviews-list-item.reviews--full
-					.reviews-item-top
 						.reviews-item-avatar М
 						.reviews-item-title
-							h4.reviews-item__name Маргариты Б.
-							.reviews-item__rating(style={width: '96px'})
-						.reviews-item__date.date-7
+							h4.reviews-item__name Маргарита
+							.reviews-item__rating(style={width: '105px'})
+						.reviews-item__date.date-5
 					.reviews-item__text Отеки, как рукой сняло, а до этого кремом пользовалась и ничего не помогло и только тратила нервы. Варилиф советую всем с варикозом.
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -118,23 +84,11 @@ section.reviews.block(id='reviews')
 						.dislike 2
 				li.reviews-list-item.reviews--full
 					.reviews-item-top
-						.reviews-item-avatar Л
-						.reviews-item-title
-							h4.reviews-item__name Людмила В.
-							.reviews-item__rating(style={width: '62px'})
-						.reviews-item__date.date-8
-					.reviews-item__text Заказала, но пока так и не получила, напутали на почте и отправили обратно на склад куда-то. Теперь жду, когда же приедет.
-					button.reviews-item__btn Прочитать весь отзыв
-					.reviews-assessment
-						.like 23
-						.dislike 7
-				li.reviews-list-item.reviews--full
-					.reviews-item-top
 						.reviews-item-avatar И
 						.reviews-item-title
-							h4.reviews-item__name Ирина Б.
+							h4.reviews-item__name Ирина 
 							.reviews-item__rating
-						.reviews-item__date.date-10
+						.reviews-item__date.date-6
 					.reviews-item__text Покупала для мамы и вроде гель и помог и вены стали светлей, но не исчезли полностью, хотя ноги, она сказала, что больше не болят.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -145,9 +99,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar М
 						.reviews-item-title
-							h4.reviews-item__name Мария Ш.
+							h4.reviews-item__name Мария
 							.reviews-item__rating
-						.reviews-item__date.date-10
+						.reviews-item__date.date-6
 					.reviews-item__text Избавилась от болей и отеков и надеюсь что варикоз не вернется.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -158,9 +112,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar В
 						.reviews-item-title
-							h4.reviews-item__name Валерий Г.
+							h4.reviews-item__name Валерий
 							.reviews-item__rating
-						.reviews-item__date.date-11
+						.reviews-item__date.date-7
 					.reviews-item__text Ноги болели, знакомая врач посоветовала Варилиф. Заказал, стал обрабатвать ноги и боль ушла. Хоть бы надолго, а то работаю я на ногах весь день.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -171,9 +125,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar К
 						.reviews-item-title
-							h4.reviews-item__name Карина Д.
+							h4.reviews-item__name Карина 
 							.reviews-item__rating
-						.reviews-item__date.date-12
+						.reviews-item__date.date-8
 					.reviews-item__text Очень хороший гель, хотя и ожидала, что упаковка будет больше. А то пришлось через три недели еще упаковку заказывать. Но вены под коленками я убрала.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -184,9 +138,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar О
 						.reviews-item-title
-							h4.reviews-item__name Оксана М.
+							h4.reviews-item__name Оксана 
 							.reviews-item__rating
-						.reviews-item__date.date-13
+						.reviews-item__date.date-10
 					.reviews-item__text Варилиф очень советую у кого болят ноги из-за варикоза, потому что мне очень этот гель помог и я теперь снова высыпаюсь нормально.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -197,9 +151,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar В
 						.reviews-item-title
-							h4.reviews-item__name Вероника К.
+							h4.reviews-item__name Вероника 
 							.reviews-item__rating
-						.reviews-item__date.date-15
+						.reviews-item__date.date-10
 					.reviews-item__text Два раза помазать ноги в день и никаких судорог и боли в ногах.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -210,9 +164,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Л
 						.reviews-item-title
-							h4.reviews-item__name Лариса С.
+							h4.reviews-item__name Лариса 
 							.reviews-item__rating
-						.reviews-item__date.date-15
+						.reviews-item__date.date-11
 					.reviews-item__text Помогает от болей, быстро втирается. Не нужно остатки салфеткой убирать. И коже на пользу идет.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -223,9 +177,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar О
 						.reviews-item-title
-							h4.reviews-item__name Олег Т.
+							h4.reviews-item__name Олег 
 							.reviews-item__rating
-						.reviews-item__date.date-15
+						.reviews-item__date.date-11
 					.reviews-item__text Пользуюсь, когда ноги болят после пробежки.  
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -236,9 +190,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Т
 						.reviews-item-title
-							h4.reviews-item__name Татьяна В.
-							.reviews-item__rating(style={width: '97px'})
-						.reviews-item__date.date-16
+							h4.reviews-item__name Татьяна
+							.reviews-item__rating(style={width: '105px'})
+						.reviews-item__date.date-12
 					.reviews-item__text Обычный гель от болей при варикозе, боль снимает в течение 10 минут.  
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -249,9 +203,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Б
 						.reviews-item-title
-							h4.reviews-item__name Богдана С.
+							h4.reviews-item__name Богдана
 							.reviews-item__rating
-						.reviews-item__date.date-18
+						.reviews-item__date.date-14
 					.reviews-item__text Венозная сетки стала меньше, но я еще и массаж делала и упражнения, специальные для ног, чтобы стенки вен укрепить.  
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -262,9 +216,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar А
 						.reviews-item-title
-							h4.reviews-item__name Анна Б.
+							h4.reviews-item__name Анна
 							.reviews-item__rating
-						.reviews-item__date.date-18
+						.reviews-item__date.date-14
 					.reviews-item__text Помог мне от монотонной боли в ногах.  
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -275,9 +229,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Е
 						.reviews-item-title
-							h4.reviews-item__name Екатерина Т.
+							h4.reviews-item__name Екатерина
 							.reviews-item__rating
-						.reviews-item__date.date-18
+						.reviews-item__date.date-14
 					.reviews-item__text Хороший препарат, который быстро облегчает боль и разглаживает вены.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -288,9 +242,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Ю
 						.reviews-item-title
-							h4.reviews-item__name Юлия М.
+							h4.reviews-item__name Юлия
 							.reviews-item__rating
-						.reviews-item__date.date-19
+						.reviews-item__date.date-15
 					.reviews-item__text О, чудо! Я не верю, что это произошло! Мои ноги снова как в 20 лет) Конец моим страданиям, бегу за новой юбкой. И платьем. Коротким! Спасибо создателям этого средства, оно творит чудеса!
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -301,10 +255,12 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar С
 						.reviews-item-title
-							h4.reviews-item__name Сергей Ф.
+							h4.reviews-item__name Сергей
 							.reviews-item__rating
-						.reviews-item__date.date-20
-					.reviews-item__text Я по натуре скептик и долго сомневался, покупать ли варилиф. Но мой плачевный опыт миллионов разных методов лечения завел меня в тупик и я решил рискунть… Купил, пользовался наверное дней 5 – особых изменений не происходило. Разве что ноги стали болеть меньше. Но потом, ребята! Когда я прошел весь указаный курс, вены на ногах исчезли полностью! Это неевроятно! Не думал, что такую болезнь побеит такой недорогой тюбик геля. Советую всем отчаявшимся. Работает!!!
+						.reviews-item__date.date-16
+					.reviews-item__text Я по натуре скептик и долго сомневался, покупать ли варилиф. Но мой плачевный опыт миллионов разных методов лечения завел меня в тупик и я решил рискунть… Купил, пользовался наверное дней 
+						span.text-nowrap 5 – особых 
+						| изменений не происходило. Разве что ноги стали болеть меньше. Но потом, ребята! Когда я прошел весь указаный курс, вены на ногах исчезли полностью! Это неевроятно! Не думал, что такую болезнь побеит такой недорогой тюбик геля. Советую всем отчаявшимся. Работает!!!
 
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -314,9 +270,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Г
 						.reviews-item-title
-							h4.reviews-item__name Галина М.
+							h4.reviews-item__name Галина
 							.reviews-item__rating
-						.reviews-item__date.date-21
+						.reviews-item__date.date-17
 					.reviews-item__text Соседка пользуется и мне посоветовала. Эффект есть, мой варикоз был в ужасном состоянии. Я плакала ночами. Теперь – все прошло. Смело берите, варилиф того стоит.
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -327,9 +283,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar И
 						.reviews-item-title
-							h4.reviews-item__name Иван В.
+							h4.reviews-item__name Иван
 							.reviews-item__rating
-						.reviews-item__date.date-22
+						.reviews-item__date.date-18
 					.reviews-item__text Гель хороший. Состав детально продуман специалистами и делает свое дело. 
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -340,9 +296,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar О
 						.reviews-item-title
-							h4.reviews-item__name Оксана В.
+							h4.reviews-item__name Оксана
 							.reviews-item__rating
-						.reviews-item__date.date-23
+						.reviews-item__date.date-19
 					.reviews-item__text Такой счастливой я давно себя не помню)) Намучалась с этими ногами. Муж ушел год назад, чувствовала себя одинокой, да еще и с больными ногами(( После курса варилифа исчезли все симптомы варикоза! И меня пригласил на свидание коллега, который давно нравится. Одену-ка я платье ,да покороче)))))) 
 
 					button.reviews-item__btn Прочитать весь отзыв
@@ -353,9 +309,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar В
 						.reviews-item-title
-							h4.reviews-item__name Виталина К.
+							h4.reviews-item__name Виталина
 							.reviews-item__rating
-						.reviews-item__date.date-24
+						.reviews-item__date.date-20
 					.reviews-item__text Мне 30 лет и стала замечать появление венозной сетки на одной ноге. Теперь кроме целлюлита борюсь еще и с ней. Что за жизнь… Заказала здесь варилиф и не прогадала. Сетки – как не бывало! Урааааааа
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -365,9 +321,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar С
 						.reviews-item-title
-							h4.reviews-item__name Светлана Е.
+							h4.reviews-item__name Светлана
 							.reviews-item__rating
-						.reviews-item__date.date-24
+						.reviews-item__date.date-21
 					.reviews-item__text В моем возрасте варикоз проявляется у многих. Я не стала исключением. Боролась с ним, чем могла, все бесполезно. Сестра посоветовала купить варилиф. Ей помог очень хорошо. Я стала мазаться, как положено, 2 раза в день. Уже на следующий день боль ушла, вены успокоились и стали намного светлее.
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -377,9 +333,9 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar Ф
 						.reviews-item-title
-							h4.reviews-item__name Федор С.
+							h4.reviews-item__name Федор
 							.reviews-item__rating
-						.reviews-item__date.date-25
+						.reviews-item__date.date-22
 					.reviews-item__text Это мой первый в жизни отзыв, не удержался, чтоб не поделится советом. Варилиф буквально спас мои ноги! Волшебство какое-то. На моей стадии варикоза думал уже ничего мне не поможет. Все прошло! Берите, не пожалеете!
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -387,11 +343,23 @@ section.reviews.block(id='reviews')
 						.dislike 0
 				li.reviews-list-item.reviews--full
 					.reviews-item-top
+						.reviews-item-avatar Л
+						.reviews-item-title
+							h4.reviews-item__name Людмила
+							.reviews-item__rating(style={width: '62px'})
+						.reviews-item__date.date-22
+					.reviews-item__text Заказала, но пока так и не получила, напутали на почте и отправили обратно на склад куда-то. Теперь жду, когда же приедет.
+					button.reviews-item__btn Прочитать весь отзыв
+					.reviews-assessment
+						.like 23
+						.dislike 7
+				li.reviews-list-item.reviews--full
+					.reviews-item-top
 						.reviews-item-avatar Д
 						.reviews-item-title
-							h4.reviews-item__name Дмитрий В.
+							h4.reviews-item__name Дмитрий 
 							.reviews-item__rating
-						.reviews-item__date.date-27
+						.reviews-item__date.date-24
 					.reviews-item__text Варилиф – просто маст-хев для людей с проблемными венами. Другого псредства просто нет, поймите! Кто бы что ни говорил. Он реально работает!!!
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
@@ -401,14 +369,51 @@ section.reviews.block(id='reviews')
 					.reviews-item-top
 						.reviews-item-avatar И
 						.reviews-item-title
-							h4.reviews-item__name Ирина Г.
+							h4.reviews-item__name Ирина 
 							.reviews-item__rating
-						.reviews-item__date.date-29
+						.reviews-item__date.date-26
 					.reviews-item__text Заказала на свой страх и риск и надо же, такой эфективный гель. Молодцы корейцы, знают толк. Раньше я возвращалась с работы и падала на диван, вены дико опухали, ноги отекали и болели. Сейчас ничего не безпокоит, кожа выровнялась, снова чуствую себя человеком. Спасибо!
 					button.reviews-item__btn Прочитать весь отзыв
 					.reviews-assessment
 						.like 14
 						.dislike 0
+				li.reviews-list-item
+					.reviews-item-top
+						.reviews-item-avatar Е
+						.reviews-item-title
+							h4.reviews-item__name Евгения
+							.reviews-item__rating(style={'width': '86px'})
+						.reviews-item__date.date-26
+					.reviews-item__text Я долго не могла понять, почему постоянно болела голова. Иногда вообще пластом лежала, приходилось с работы отпрашиваться. О том, что это гипертония, узнала случайно - мама предположила.  Ну я и померила давление - 150/114. Когда давление выросло и стало постоянно держаться 140/100, то пришлось пить таблетки ежедневно.Тоносил.
+					button.reviews-item__btn Прочитать весь отзыв
+					.reviews-assessment
+						.like 17
+						.dislike 3
+				li.reviews-list-item.reviews--full
+					.reviews-item-top
+						.reviews-item-avatar M
+						.reviews-item-title
+							h4.reviews-item__name Марина
+							.reviews-item__rating(style={width: '60px'})
+						.reviews-item__date.date-26
+					.reviews-item__text На сам Варилиф нареканий нет, помогает хорошо. Но доставка подкачала, ехал он на два дня дольше, чем было оговорено, а это критично. Подучите своих менеджеров!!
+					button.reviews-item__btn Прочитать весь отзыв
+					.reviews-assessment
+						.like 31
+						.dislike 12
+				li.reviews-list-item.reviews--full
+						.reviews-item-top
+							.reviews-item-avatar А
+							.reviews-item-title
+								h4.reviews-item__name Александра
+								.reviews-item__rating(style={width: '80px'})
+							.reviews-item__date.date-28
+						.reviews-item__text Вены светлеют через три недели и не раньше, но нужно мазать каждый день.
+						button.reviews-item__btn Прочитать весь отзыв
+						.reviews-assessment
+							.like 19
+							.dislike 3
+
 
 
 

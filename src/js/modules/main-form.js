@@ -1,10 +1,11 @@
 
 
 	export default () => {
-		var people = $('.online-people');
+		function formTs() {
+			var people = $('.online-people');
 		var sold = $('.online-sold');
 		var dynamic = $('.online-dynamic');
-		
+	
 		function randomInteger(min, max) {
 			var rand = min + Math.random() * (max + 1 - min);
 			return Math.floor(rand);
@@ -21,14 +22,16 @@
 				sold.fadeIn();
 				counter = 1;
 			}
-		}, 2000);
+		}, 4000);
 		
-		
-		setInterval(function () {
+	
+	 setInterval(function () {
 		setTimeout(function () {
 			dynamic.html(randomInteger(27, 47));
-		}, 2000);
+	}, 2000);
 			}, 4000);
+		}
+		setTimeout(formTs, 2000);
 		
 	
 	};

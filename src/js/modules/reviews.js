@@ -6,7 +6,8 @@ export default () => {
   });
   (function($) {
     $(window).on("load", function() {
-      $(".reviews-list").mCustomScrollbar();
+			$(".reviews-list").mCustomScrollbar();
+			
     });
   })(jQuery);
   $(".star1").on("click", function() {
