@@ -1,133 +1,134 @@
 .helped {
-    &-block {
-        padding: 74px 0 94px 0;
+  &-block {
+    padding: 74px 0 94px 0;
+  }
+  &__title {
+    max-width: 900px;
+    // padding-top: 23px;
+    margin: 0 auto 36px;
+    line-height: 1.2;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .item {
+    &:not(:last-child) {
+      margin-right: 10px;
     }
-    &__title {
-        max-width: 900px;
-        padding-top: 23px;
-        margin: 0 auto 34px;
+    &__img {
+      position: relative;
+      margin-bottom: 16px;
+      max-width: 368px;
+      height: 176px;
+      img {
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+      }
+      &::before,
+      &:after {
+        position: absolute;
+        width: 50%;
+        height: 25px;
+        bottom: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 27px;
+      }
+      &::before {
+        content: "До";
+        background-color: #f77d2f;
+        left: 0;
+      }
+      &::after {
+        content: "После";
+        background-color: #48afcd;
+        right: 0;
+      }
     }
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
+    &__person {
+      text-align: center;
+      font-size: 22px;
+      line-height: 45px;
     }
-    .item {
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
-        &__img {
-            position: relative;
-            margin-bottom: 16px;
-            max-width: 368px;
-            height: 176px;
-            img {
-                border-radius: 5px;
-                height: 100%;
-                width: 100%;
-            }
-            &::before,
-            &:after {
-                position: absolute;
-                width: 50%;
-                height: 25px;
-                bottom: 0;
-                text-align: center;
-                color: #fff;
-                font-size: 20px;
-                line-height: 27px;
-            }
-            &::before {
-                content: "До";
-                background-color: #f77d2f;
-                left: 0;
-            }
-            &::after {
-                content: "После";
-                background-color: #48afcd;
-                right: 0;
-            }
-        }
-        &__person {
-            text-align: center;
-            font-size: 22px;
-            line-height: 45px;
-        }
+  }
+  &__bullets {
+    display: flex;
+    flex: 0 0;
+    justify-content: center;
+    &-img:not(:last-child) {
+      margin-right: 20px;
     }
-    &__bullets {
-        display: flex;
-        flex: 0 0;
-        justify-content: center;
-        &-img:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
+  }
 }
 
 @include r(1023) {
-    .helped {
-        .item {
-            max-width: 290px;
-            &__img {
-                margin-bottom: 0;
-                height: 145px;
-                &::before,
-                &::after {
-                    height: 16px;
-                    font-size: 14px;
-                    line-height: 16px;
-                }
-            }
-            &__person {
-                text-align: center;
-                font-size: 16px;
-                line-height: 45px;
-            }
+  .helped {
+    .item {
+      max-width: 290px;
+      &__img {
+        margin-bottom: 0;
+        height: 145px;
+        &::before,
+        &::after {
+          height: 16px;
+          font-size: 14px;
+          line-height: 16px;
         }
+      }
+      &__person {
+        text-align: center;
+        font-size: 16px;
+        line-height: 45px;
+      }
     }
+  }
 }
 
 @include r(767) {
-    .helped {
-        &__list {
-            flex-direction: column;
-        }
-        .item {
-            max-width: 90%;
-            margin-bottom: 20px;
-            height: 176px;
-            // &__img {
-            //     img {
-            //         width: 90%;
-            //         height: 100%;
-            //         min-width: 100%;
-            //         max-height: 100%;
-            //     }
-            // }
-            &:not(:last-child) {
-                margin-right: 0px;
-            }
-            &__person {
-                text-align: center;
-                font-size: 18px;
-                line-height: 45px;
-            }
-        }
+  .helped {
+    &__list {
+      flex-direction: column;
     }
+    .item {
+      max-width: 90%;
+      margin-bottom: 20px;
+      height: 176px;
+      // &__img {
+      //     img {
+      //         width: 90%;
+      //         height: 100%;
+      //         min-width: 100%;
+      //         max-height: 100%;
+      //     }
+      // }
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
+      &__person {
+        text-align: center;
+        font-size: 18px;
+        line-height: 45px;
+      }
+    }
+  }
 }
 
 @include r(479) {
-    .helped {
-        .item {
-            &__person {
-                font-size: 16px;
-            }
-        }
-        &__bullets {
-            &-img:not(:last-child) {
-                margin-right: 10px;
-            }
-        }
+  .helped {
+    .item {
+      &__person {
+        font-size: 16px;
+      }
     }
+    &__bullets {
+      &-img:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
 }

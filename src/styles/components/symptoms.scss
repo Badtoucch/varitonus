@@ -1,20 +1,20 @@
 /* symptoms START____________________________________________________________________________________________________starts */
 
 .symptoms {
-    overflow-x: hidden;
-    // padding-bottom: 100px;
+  overflow-x: hidden;
+  padding-bottom: 90px;
 }
 
 .symptops__sub {
-    margin-bottom: 68px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 24px;
+  margin-bottom: 68px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .symptoms-content__title.title {
-    margin-bottom: 19px;
-    background-color: transparent;
+  margin-bottom: 25px;
+  background-color: transparent;
 }
 
 // .photo-slider__item {
@@ -23,222 +23,224 @@
 //     margin: 0 2.5px;
 // }
 .problems {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -11px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -11px;
 }
 
 .item {
-    &__text-container {
-        display: flex;
-        // align-items: center;
-    }
-    &_two {
-        margin-top: -14px;
-    }
-    &_three {
-        margin-top: 22px;
-    }
+  &__text-container {
+    display: flex;
+    // align-items: center;
+  }
+  &_two {
+    margin-top: -14px;
+  }
+  &_three {
+    margin-top: 22px;
+  }
+  &_four {
+    margin-top: 26px;
+  }
+  @include r(1023) {
+    &_two,
+    &_three,
     &_four {
-        margin-top: 26px;
+      margin-top: 0px;
     }
-    @include r(1023) {
-        &_two,
-        &_three,
-        &_four {
-            margin-top: 0px;
-        }
-    }
+  }
 }
 
 .problems__content {
-    position: relative;
-    color: #444444;
-    font-size: 17px;
-    line-height: 20px;
-    margin-bottom: 26px;
-    padding-left: 80px;
+  position: relative;
+  color: #444444;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 23px;
+  padding-left: 80px;
 }
 
 .problems__content {
+  &-first:before,
+  &-second:before,
+  &-third:before,
+  &-fourth:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 70px;
+    line-height: 57px;
+    color: #d4123b;
+  }
+  &-first:before {
+    content: "1.";
+  }
+  &-second:before {
+    content: "2.";
+  }
+  &-third:before {
+    content: "3.";
+  }
+  &-fourth:before {
+    content: "4.";
+  }
+}
+
+.problems__item {
+  width: 270px;
+  font-weight: bold;
+}
+
+.problems__item:nth-child(odd) {
+  padding-top: 61px;
+}
+
+.problems__img {
+  min-height: 270px;
+}
+
+.problems__img:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.symptoms__source {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.symptoms__attention {
+  position: relative;
+  // background-color: rgba(#c11900, 0.1);
+  max-width: 830px;
+  padding: 23px 30px 0px;
+  border-radius: 30px;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #000000;
+}
+
+@media screen and (max-width: 1220px) {
+  .symptoms {
+    padding-top: 85px;
+  }
+  .problems__item {
+    width: 230px;
+  }
+
+  .problems__img {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .symptoms-content__title.title {
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  .symptops__sub {
+    margin-bottom: 30px;
+  }
+  .problems__item:nth-child(even) {
+    padding: 0;
+  }
+  .problems__item {
+    width: 170px;
+  }
+  .problems__title {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .problems__content {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 48px;
     &-first:before,
     &-second:before,
     &-third:before,
     &-fourth:before {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 70px;
-        line-height: 1;
-        color: #d4123b;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
     }
-    &-first:before {
-        content: "1.";
-    }
-    &-second:before {
-        content: "2.";
-    }
-    &-third:before {
-        content: "3.";
-    }
-    &-fourth:before {
-        content: "4.";
-    }
-}
-
-.problems__item {
-    width: 270px;
-    font-weight: bold;
-}
-
-.problems__item:nth-child(odd) {
-    padding-top: 61px;
-}
-
-.problems__img:not(:last-child) {
-    margin-bottom: 27px;
-}
-
-.symptoms__source {
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    margin-bottom: 42px;
-}
-
-.symptoms__attention {
-    position: relative;
-    // background-color: rgba(#c11900, 0.1);
-    max-width: 830px;
-    padding: 0px 30px 22px;
-    border-radius: 30px;
-    font-size: 30px;
-    line-height: 34px;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: bold;
-    color: #000000;
-}
-
-@media screen and (min-width: 1220px) {
-    .symptoms {
-        padding-top: 85px;
-    }
-}
-
-@media screen and (max-width: 1220px) {
-    .problems__item {
-        width: 230px;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .symptoms-content__title.title {
-        margin-bottom: 5px;
-        margin-bottom: 10px;
-    }
-    .symptops__sub {
-        margin-bottom: 30px;
-    }
-    .problems {}
-    .problems__item:nth-child(even) {
-        padding: 0;
-    }
-    .problems__item {
-        width: 170px;
-    }
-    .problems__title {
-        font-size: 19px;
-        line-height: 22px;
-    }
-    .problems__content {
-        font-size: 14px;
-        text-align: left;
-        padding-left: 48px;
-        &-first:before,
-        &-second:before,
-        &-third:before,
-        &-fourth:before {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 40px;
-        }
-    }
-    .problems__item:nth-child(odd) {
-        padding-top: 0px;
-    }
+  }
+  .problems__item:nth-child(odd) {
+    padding-top: 0px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .symptoms {
-        &__block {
-            padding-top: 0px !important;
-        }
+  .symptoms {
+    &__block {
+      padding-top: 0px !important;
     }
-    .symptoms-content__title.title {
-        margin-top: 0;
-        padding-top: 30px;
-    }
-    .problems {
-        flex-wrap: wrap !important;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .problems__content {
-        font-size: 17px;
-    }
-    .symptoms .problems__item {
-        width: 290px;
-        margin-bottom: 20px;
-    }
-    .problems__img {
-        margin: auto;
-    }
-    .problems__title {
-        font-size: 16px;
-    }
+  }
+  .symptoms-content__title.title {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  .problems {
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .problems__content {
+    font-size: 17px;
+  }
+  .symptoms .problems__item {
+    width: 290px;
+    margin-bottom: 20px;
+  }
+  .problems__img {
+    margin: auto;
+  }
+  .problems__title {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 639px) {
-    .problems {
-        justify-content: center;
-    }
-    .problems__item:nth-child(3) {
-        margin-bottom: 20px;
-    }
-    .symptoms__block {
-        padding-top: 0 !important;
-    }
-    .problems__content {
-        padding-right: 0px;
-    }
-    .problems__item:nth-child(4) {
-        margin-bottom: 0;
-    }
+  .problems {
+    justify-content: center;
+  }
+  .problems__item:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  .symptoms__block {
+    padding-top: 0 !important;
+  }
+  .problems__content {
+    padding-right: 0px;
+  }
+  .problems__item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 479px) {
-    .symptoms-content__title.title {
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    .symptops__sub {
-        margin-bottom: 20px;
-        font-size: 18px;
-    }
-    .problems {
-        justify-content: center;
-    }
-    .problems__item:nth-child(3) {
-        margin-bottom: 20px;
-    }
-    .problems__item:nth-child(4) {
-        margin-bottom: 0;
-    }
+  .symptoms-content__title.title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .symptops__sub {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .problems {
+    justify-content: center;
+  }
+  .problems__item:nth-child(3) {
+    margin-bottom: 20px;
+  }
+  .problems__item:nth-child(4) {
+    margin-bottom: 0;
+  }
 }
-
 
 /* symptoms END____________________________________________________________________________________________________ends */
