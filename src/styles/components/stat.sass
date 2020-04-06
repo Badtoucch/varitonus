@@ -1,7 +1,7 @@
 .stat
-	padding: 74px 0 72px
+	padding: 74px 0 90px
 	&__subtitle
-		margin-top: 9px
+		margin-top: 22px
 	&-info
 		margin-top: 76px
 		display: flex
@@ -10,6 +10,9 @@
 			margin-top: 40px
 		+r(1023)
 			margin-top: 15px
+		+r(767)
+			margin-top: 10px
+			flex-wrap: wrap
 		+r(479)
 			flex-direction: column
 		&-box
@@ -17,9 +20,12 @@
 			text-align: center
 			+r(767)
 				width: 100%
+				max-width: 250px
+			+r(639)
+				max-width: 230px
 			&:not(:last-child)
-				+r(479)
-					margin-bottom: 8px
+				+r(767)
+					margin-bottom: 11px
 			&--border
 				position: relative
 				&::before, &::after
@@ -90,7 +96,7 @@
 		+r(767)
 			margin-top: 15px
 	&-sert
-		margin-top: 56px
+		margin-top: 48px
 		display: flex
 		justify-content: space-between
 		max-width: 568px
@@ -128,17 +134,17 @@
 			z-index: -1
 			+r(639)
 				display: none
-@media (max-width: 767px) and (min-width: 480px)
-	.stat-info-box
-		text-align: left
-		display: flex
-		align-items: center
-		max-width: 510px
-		margin-left: auto
-		margin-right: auto
-	.stat-info
-		flex-direction: column
-	.stat-info__text
-		max-width: 100%
-		margin: 0 0 0 15px
-		font-size: 19px
+// @media (max-width: 767px) and (min-width: 480px)
+// 	.stat-info-box
+// 		text-align: left
+// 		display: flex
+// 		align-items: center
+// 		max-width: 510px
+// 		margin-left: auto
+// 		margin-right: auto
+// 	.stat-info
+// 		flex-direction: column
+// 	.stat-info__text
+// 		max-width: 100%
+// 		margin: 0 0 0 15px
+// 		font-size: 19px

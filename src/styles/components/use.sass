@@ -27,7 +27,9 @@
 			margin-top: 30px
 		+r(639)
 			max-width: 370px
-			margin-top: 25px
+			margin-top: 15px
+			flex-direction: column
+			align-items: center
 		+r(479)
 			margin-top: 20px
 	&-pack
@@ -43,7 +45,9 @@
 			max-width: 250px
 			left: 0
 		+r(639)
-			display: none
+			top: 0
+			margin-top: 20px
+			order: 1
 		img
 			max-width: 250px
 			+r(767)
@@ -103,7 +107,7 @@
 			display: flex
 			align-items: center
 			&:not(:last-child)
-				margin-bottom: 56px
+				margin-bottom: 10px
 				+r(767)
 					margin-bottom: 20px
 	&-item
@@ -160,9 +164,10 @@
 		+r(1219)
 			margin-top: 30px
 		+r(1023)
-			margin-top: 20px
+			margin-top: 10px
+		+r(479)
+			margin-top: 5px
 		&-content
-			margin-left: 50px
 			width: 100%
 			+r(1219)
 				margin-left: 0px
@@ -172,20 +177,27 @@
 			display: flex
 			justify-content: flex-end
 			align-items: center
-			margin-top: 25px
-			margin-bottom: 9px
+			margin-top: 21px
+			margin-bottom: 8px
 			+r(1023)
 				justify-content: space-between
+				margin-bottom: 0
 			+r(767)
 				flex-direction: column
 		&-recommendation
-			margin: 24px 0
+			margin: 22px 0 30px
 			display: flex
 			justify-content: flex-end
 			+r(1219)
 				margin-top: 18px
 			+r(1023)
 				justify-content: space-between
+				flex-direction: column
+				max-width: 516px
+				margin-left: auto
+			+r(767)
+				margin-top: 0
+				max-width: 100%
 			+r(479)
 				flex-direction: column
 	&-doctor
@@ -194,20 +206,30 @@
 			+r(1023)
 			padding-left: 0
 		&-img
-			max-width: 265px
-			max-height: 330px
+			max-width: 279px
 			flex-shrink: 0
 			position: absolute
 			bottom: 0
 			left: 10px
 			z-index: 1
-			overflow: hidden
+			&::before
+				content: ''
+				position: absolute
+				width: 117px
+				height: 168px
+				background: url(../img/certificate.jpg) no-repeat center / contain
+				bottom: 67px
+				right: -32px
+				z-index: -1
+				+r(1023)
+					display: none
 			+r(1219)
-			max-height: 296px
-			+r(1023)
+				left: 0
+				max-width: 225px
+			+r(767)
 				display: none
 			img
-				width: 265px
+				width: 279px
 		&__name
 			color: #000000
 			font-size: 20px
@@ -227,21 +249,35 @@
 				font-size: 16px
 				text-align: center
 				margin-bottom: 10px
+			+r(479)
+				margin-bottom: 0
 		&-clinical
 			max-width: 455px
 			padding: 6px 40px 9px 39px
-			margin-right: 168px
+			margin-right: 83px
 			display: flex
 			align-items: center
 			justify-content: space-between
 			border-radius: 5px
-			background-color: #ffffff
 			+r(1219)
 				padding: 10px
 			+r(1023)
 				margin-right: 0
 			+r(639)
-				flex-direction: column
+			+r(479)
+				margin-right: 0px
+			&__logo
+				width: 55px
+			&__name
+				text-transform: uppercase
+				color: #2f8fbd
+				font-weight: bold
+				margin-left: 8px
+				font-size: 16px
+				line-height: normal
+				max-width: 260px
+				+r(479)
+					font-size: 14px
 	&-certificat-img
 		left: 173px
 		position: absolute
@@ -265,22 +301,30 @@
 			margin-left: 0
 			margin-top: 10px
 	&-recommendation-item
-		padding-top: 47px
+		padding-top: 42px
 		color: #444444
 		font-size: 18px
 		font-weight: 400
 		line-height: 24px
-		max-width: 253px
+		max-width: 258px
 		position: relative
+		.text-bold
+			color: #333
 		+r(1219)
 			font-size: 17px
 			padding-top: 35px
 			max-width: 214px
+		+r(1023)
+			max-width: 100%
+			padding-left: 42px
+			padding-top: 0
 		+r(479)
 			max-width: 100%
 			text-align: center
+			padding-left: 0
+			padding-top: 35px
 		&:not(:last-child)
-			margin-right: 15px
+			margin-right: 29px
 			+r(479)
 				margin-right: 0
 				margin-bottom: 10px
@@ -295,7 +339,7 @@
 			background-size: contain
 			+r(1219)
 				left: calc(50% - 30px)
-			+r(767)
+			+r(1023)
 				left: 0
 			+r(479)
 				left: 50%
@@ -316,6 +360,12 @@
 		margin-right: 0
 		margin-bottom: 10px
 
-.use__bottom
+.use-bottom
 	background-color: #ebebeb
-	
+.use__bottom
+	+r(1023)
+		background-color: #ebebeb
+		padding-top: 1px
+.use-bottom
+	.container
+		position: relative

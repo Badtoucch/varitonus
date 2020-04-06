@@ -2,7 +2,7 @@
 
 .symptoms {
   overflow-x: hidden;
-  padding-bottom: 90px;
+  padding-bottom: 83px;
 }
 
 .symptops__sub {
@@ -13,7 +13,7 @@
 }
 
 .symptoms-content__title.title {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   background-color: transparent;
 }
 
@@ -57,7 +57,7 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 23px;
-  padding-left: 80px;
+  padding-left: 79px;
 }
 
 .problems__content {
@@ -66,9 +66,10 @@
   &-third:before,
   &-fourth:before {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    font-size: 70px;
+    left: -2px;
+    top: 4px;
+		font-size: 70px;
+		font-weight: 900;
     line-height: 57px;
     color: #d4123b;
   }
@@ -79,10 +80,12 @@
     content: "2.";
   }
   &-third:before {
-    content: "3.";
+		content: "3.";
+		top: -16px;
   }
   &-fourth:before {
-    content: "4.";
+		content: "4.";
+		top: -16px;
   }
 }
 
@@ -92,7 +95,7 @@
 }
 
 .problems__item:nth-child(odd) {
-  padding-top: 61px;
+  padding-top: 64px;
 }
 
 .problems__img {
@@ -114,24 +117,26 @@
   position: relative;
   // background-color: rgba(#c11900, 0.1);
   max-width: 830px;
-  padding: 23px 30px 0px;
+  padding: 22px 30px 0px;
   border-radius: 30px;
   font-size: 30px;
   line-height: 34px;
   text-align: center;
-  margin: 0 auto;
+  margin: 40px auto 0;
   font-weight: bold;
   color: #000000;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1219px) {
   .symptoms {
     padding-top: 85px;
   }
   .problems__item {
     width: 230px;
   }
-
+	.symptoms__attention{
+		margin-top: 25px;
+	}
   .problems__img {
     min-height: auto;
   }
@@ -154,7 +159,12 @@
   .problems__title {
     font-size: 19px;
     line-height: 22px;
-  }
+	}
+	.symptoms__attention{
+		padding-top: 0;
+		font-size: 26px;
+		line-height: normal;
+	}
   .problems__content {
     font-size: 14px;
     text-align: left;
@@ -180,7 +190,11 @@
     &__block {
       padding-top: 0px !important;
     }
-  }
+	}
+	.symptoms__attention{
+		margin-top: 20px;
+		font-size: 21px;
+	}
   .symptoms-content__title.title {
     margin-top: 0;
     padding-top: 30px;
@@ -195,7 +209,7 @@
   }
   .symptoms .problems__item {
     width: 290px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .problems__img {
     margin: auto;
@@ -240,7 +254,10 @@
   }
   .problems__item:nth-child(4) {
     margin-bottom: 0;
-  }
+	}
+	.symptoms__attention{
+		margin-top: 27px;
+	}
 }
 
 /* symptoms END____________________________________________________________________________________________________ends */

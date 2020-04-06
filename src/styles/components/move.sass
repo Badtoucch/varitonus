@@ -2,7 +2,8 @@
 	padding: 12px 0 14px
 	position: relative
 	background-color: #ebebeb
-
+	.container
+		position: relative
 	+r(1023)
 		padding-top: 50px
 		padding-bottom: 50px 
@@ -19,43 +20,43 @@
 		justify-content: flex-end
 		+r(1219)
 			justify-content: center
+		+r(1023)
+			padding-top: 25px
+		+r(639)
+			padding-top: 0
 		+r(479)
 			flex-direction: column
 	&-info
 		display: flex
 		justify-content: center
 		align-items: center
-		+r(1023)
-			flex-wrap: wrap
-			max-width: 270px
+		+r(639)
 			flex-direction: column
 			align-items: center
 			justify-content: center
-			// padding: 15px 10px
-			margin-left: 30px
-			// border: 3px solid #48afcd
-			// border-radius: 5px
 		+r(767)
 			margin-left: 15px
 		+r(639)
-			margin-left: 5px
+			margin-left: -15px
 			max-width: 245px
+		+r(479)
+			margin-left: 0
 	&-pack
 		max-width: 110px
 		position: relative
 		flex-shrink: 0
 		left: -35px
-    	top: 2px
-
+		top: 2px
 		+r(1023)
-			max-width: 220px
+			max-width: 80px
 		+r(767)
-			max-width: 200px
+			max-width: 80px
 		+r(639)
 			max-width: 150px
 		+r(479)
 			margin-bottom: 10px
-			max-width: 220px
+			max-width: 160px
+			left: 0
 		&__action
 			width: 121px
 			height: 83px
@@ -64,16 +65,16 @@
 			right: -93px
 			position: absolute
 			top: 45px
-    		
 			+r(1023)
-				right: -10px
-				top: 124px
+				right: 30px
+				top: 0px
+				width: 90px
+				height: 70px
 			+r(767)
-				right: -15px
+				right: -55px
 			+r(639)
-				top: 72px
-			+r(479)
-				top: 124px
+				top: 0px
+				right: -20px
 		&__text
 			left: 50%
 			top: 50%
@@ -82,7 +83,8 @@
 			position: absolute
 			transform: translate(-55%,-60%) rotate(-35deg)
 			font-weight: 900
-
+			+r(1023)
+				font-size: 22px
 		&__text-persent
 			font-size: 18px		
 				
@@ -93,19 +95,23 @@
 		width: 265px
 		+r(1023)
 			margin-left: 0px
-			margin-top: 10px
+			margin-top: 0px
 			max-width: 100%
+			width: 220px
+			padding-top: 7px
+			padding-bottom: 7px
 		+r(639)
 			margin-top: 10px
 			margin-left: 0
+			width: 258px
 	&__title
-		margin-left: 55px
+		margin-left: 60px
 		max-width: 241px
 		color: #000000
 		font-size: 18px
 		line-height: 22px
 		position: relative
-		margin-right: -26px
+		margin-right: 32px
 		width: 100%
 		padding-right: 29px
 		+r(1219)
@@ -115,16 +121,23 @@
 			padding-right: 0
 			margin-right: 0px
 			text-align: center
-			font-size: 17px
+			font-size: 22px
 			max-width: 100%
-		// &::before
-			content: ''
 			position: absolute
-			top: 4px
+			top: 0
+			left: 0
 			right: 0
-			width: 1px
-			height: 60px
-			background-color: #d5d5d5
+		+r(639)
+			position: static
+			font-size: 17px
+		// &::before
+			// content: ''
+			// position: absolute
+			// top: 4px
+			// right: 0
+			// width: 1px
+			// height: 60px
+			// background-color: #d5d5d5
 			+r(1023)
 				display: none
 		.color-orange
@@ -135,6 +148,11 @@
 		display: flex
 		+r(1219)
 			flex-direction: column
+		+r(1023)
+			margin-right: 30px
+		+r(639)
+			margin-right: 0
+			margin-top: 5px
 		&__title
 			margin-top: 5px
 			color: #333333
@@ -149,6 +167,6 @@
 				margin-bottom: 5px
 				margin-top: 0px
 			+r(1023)
-				margin-top: 10px
+				margin-top: 0px
 	.timer__cell
 		background-color: #48afcd

@@ -33,11 +33,11 @@
 .my-popup__wrap {
   width: 770px;
   margin: 0 auto;
-  padding: 40px 24px 40px 0;
+  padding: 14px 24px 35px 20px;
   display: flex;
   justify-content: center;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #f4f4f4;
 
   @include r(999) {
     width: 300px;

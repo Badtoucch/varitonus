@@ -14,11 +14,11 @@
 }
 
 .main__title {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-size: 60px;
   color: #222;
   text-align: left;
-	line-height: 54px !important;
+	line-height: 55px !important;
   @include r(1023) {
 		text-align: center;
 		font-size: 42px;
@@ -43,7 +43,7 @@
 }
 
 .main__content {
-	margin-top: 45px;
+	margin-top: 46px;
   width: 100%;
   max-width: 400px;
   margin-right: 32px;
@@ -59,7 +59,7 @@
 	width: 415px;
 	position: absolute;
 	bottom: 0;
-	left: calc(50% - 682px);
+	left: calc(50% - 673px);
 
   @include r(1219) {
     left: calc(50% - 628px);
@@ -72,7 +72,6 @@
 
 .main__form {
 	position: relative;
-margin-right: 8px;
 
   @include r(1023) {
     max-width: 270px;
@@ -161,9 +160,9 @@ margin-right: 8px;
 }
 
 .main__attention {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   font-size: 24px;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #444444;
   border-radius: 5px;
 
@@ -225,7 +224,7 @@ margin-right: 8px;
 }
 
 .main__item:not(:last-of-type) {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   @include r(1023) {
     margin-bottom: 0;
@@ -354,8 +353,8 @@ margin-right: 8px;
 .main__medals {
   display: flex;
   position: absolute;
-  bottom: -95px;
-  right: 20px;
+  bottom: -94px;
+  right: 16px;
 
   @include r(1023) {
   bottom: 30px;
