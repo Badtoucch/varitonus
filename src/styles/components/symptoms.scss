@@ -54,7 +54,7 @@
 .problems__content {
   position: relative;
   color: #444444;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 20px;
   margin-bottom: 23px;
   padding-left: 79px;
@@ -67,9 +67,9 @@
   &-fourth:before {
     position: absolute;
     left: -2px;
-    top: 4px;
-		font-size: 70px;
-		font-weight: 900;
+    bottom: 0;
+    font-size: 70px;
+    font-weight: 900;
     line-height: 57px;
     color: #d4123b;
   }
@@ -80,22 +80,23 @@
     content: "2.";
   }
   &-third:before {
-		content: "3.";
-		top: -16px;
+    content: "3.";
   }
   &-fourth:before {
-		content: "4.";
-		top: -16px;
+    content: "4.";
   }
 }
 
 .problems__item {
   width: 270px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .problems__item:nth-child(odd) {
   padding-top: 64px;
+  justify-content: space-between;
 }
 
 .problems__img {
@@ -134,9 +135,9 @@
   .problems__item {
     width: 230px;
   }
-	.symptoms__attention{
-		margin-top: 25px;
-	}
+  .symptoms__attention {
+    margin-top: 25px;
+  }
   .problems__img {
     min-height: auto;
   }
@@ -159,12 +160,12 @@
   .problems__title {
     font-size: 19px;
     line-height: 22px;
-	}
-	.symptoms__attention{
-		padding-top: 0;
-		font-size: 26px;
-		line-height: normal;
-	}
+  }
+  .symptoms__attention {
+    padding-top: 0;
+    font-size: 26px;
+    line-height: normal;
+  }
   .problems__content {
     font-size: 14px;
     text-align: left;
@@ -190,11 +191,11 @@
     &__block {
       padding-top: 0px !important;
     }
-	}
-	.symptoms__attention{
-		margin-top: 20px;
-		font-size: 21px;
-	}
+  }
+  .symptoms__attention {
+    margin-top: 20px;
+    font-size: 21px;
+  }
   .symptoms-content__title.title {
     margin-top: 0;
     padding-top: 30px;
@@ -254,10 +255,10 @@
   }
   .problems__item:nth-child(4) {
     margin-bottom: 0;
-	}
-	.symptoms__attention{
-		margin-top: 27px;
-	}
+  }
+  .symptoms__attention {
+    margin-top: 27px;
+  }
 }
 
 /* symptoms END____________________________________________________________________________________________________ends */
