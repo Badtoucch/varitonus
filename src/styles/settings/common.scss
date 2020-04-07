@@ -24,8 +24,8 @@ button {
   display: block;
   padding: 0;
 }
-br{
-	line-height: 1;
+br {
+  line-height: 1;
 }
 .container {
   width: 1220px;
@@ -67,6 +67,7 @@ br{
 
   @include r(1023) {
     font-size: 38px;
+    line-height: 1.1;
   }
 
   @include r(767) {

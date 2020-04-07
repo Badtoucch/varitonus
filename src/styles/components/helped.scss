@@ -6,7 +6,6 @@
     max-width: 900px;
     // padding-top: 23px;
     margin: 0 auto 36px;
-    line-height: 1.2;
   }
   &__list {
     display: flex;
@@ -93,6 +92,9 @@
   .helped {
     &__list {
       flex-direction: column;
+    }
+    .helped__title {
+      margin-bottom: 20px;
     }
     .item {
       max-width: 90%;
