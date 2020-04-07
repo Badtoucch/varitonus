@@ -71,6 +71,12 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .main__human {
+    height: 692px;
+  }
+}
+
 .main__form {
   position: relative;
 
