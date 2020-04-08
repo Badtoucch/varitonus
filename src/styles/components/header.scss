@@ -51,9 +51,9 @@
 
 .header__btn {
   max-width: 140px;
-  height: 40px;
   margin-left: 22px;
-  border-radius: 10px;
+	border-radius: 10px;
+	padding: 8px 10px 7px;
   font-size: 18px;
   border-bottom: 2px solid #e36622;
   @include r(1219) {

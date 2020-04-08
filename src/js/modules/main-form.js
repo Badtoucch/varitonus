@@ -1,15 +1,18 @@
 
 
 	export default () => {
-		function formTs() {
-			var people = $('.online-people');
-		var sold = $('.online-sold');
 		var dynamic = $('.online-dynamic');
-	
+		dynamic.html(randomInteger(27, 47));
+		
 		function randomInteger(min, max) {
 			var rand = min + Math.random() * (max + 1 - min);
 			return Math.floor(rand);
 		}
+		function formTs() {
+			var people = $('.online-people');
+		var sold = $('.online-sold');
+		
+	
 		
 		let counter = 1;
 		setInterval(function() {

@@ -546,6 +546,10 @@ textarea::-webkit-scrollbar-thumb {
 textarea::-webkit-resizer {
   background-color: #48afcd;
 }
+textarea{
+	overflow-y: scroll;
+	-ms-overflow-style:scroll;
+}
 
 ::-webkit-scrollbar-track {
   background-color: #fff;

@@ -64,8 +64,11 @@
 			align-items: center
 			position: relative
 			+r(1219)
-				width: 200px
-				height: 200px
+				width: 233px
+				height: 242px
+				+r(1023)
+					width: 200px
+					height: 200px
 			img
 				+r(1023)
 					max-width: 140px
@@ -120,7 +123,7 @@
 			+r(1023)
 				font-size: 17px
 		&__text
-			margin-top: 5px
+			margin-top: 10px
 			color: #666
 			font-size: 17px
 			line-height: 1.2
@@ -128,6 +131,7 @@
 			text-align: center
 			+r(1219)
 				font-size: 16px
+				margin-top: 7px
 			+r(1023)
 				font-size: 16px
 				line-height: normal
@@ -137,10 +141,15 @@
 		max-width: 128px
 		position: relative
 		top: 3px
+		+r(1219)
+			max-width: 120px
 		+r(1023)
-			max-width: 110px !important
+			max-width: 90px !important
 .order-legs
 	justify-content: flex-end
+	img
+		position: relative
+		top: -22px
 .rom__img
 	width: 40px
 	height: 40px

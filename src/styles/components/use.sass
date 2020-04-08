@@ -111,6 +111,13 @@
 				+r(767)
 					margin-bottom: 20px
 	&-item
+		&__img2
+				position: relative
+				top: -6px
+				left: 10px
+				+r(767)
+					max-width: 100% !important
+					width: 50px !important
 		&__img
 			display: flex
 			align-items: center
@@ -129,13 +136,21 @@
 					max-width: 55%
 			
 			&--bg
-				padding-top: 4px
+				position: relative
 				background-color: #48afcd
+				img
+					position: relative
+					top: 2px
+					left: 16px
+					+r(767)
+						max-width: 100% !important
+						width: 58px !important
+						left: 11px
 			&--line
 				&::after
 					content: ''
 					position: absolute
-					bottom: -39px
+					bottom: -41px
 					left: 50%
 					transform: translateX(-50%)
 					width: 1px
@@ -177,7 +192,7 @@
 			display: flex
 			justify-content: flex-end
 			align-items: center
-			margin-top: 21px
+			margin-top: 30px
 			margin-bottom: 8px
 			+r(1023)
 				justify-content: space-between
@@ -209,20 +224,20 @@
 			max-width: 279px
 			flex-shrink: 0
 			position: absolute
-			bottom: 0
+			bottom: -32px
 			left: 10px
 			z-index: 1
-			&::before
-				content: ''
-				position: absolute
-				width: 117px
-				height: 168px
-				background: url(../img/certificate.jpg) no-repeat center / contain
-				bottom: 67px
-				right: -32px
-				z-index: -1
-				+r(1023)
-					display: none
+			// &::before
+			// 	content: ''
+			// 	position: absolute
+			// 	width: 117px
+			// 	height: 168px
+			// 	background: url(../img/certificate.jpg) no-repeat center / contain
+			// 	bottom: 67px
+			// 	right: -32px
+			// 	z-index: -1
+			// 	+r(1023)
+			// 		display: none
 			+r(1219)
 				left: 0
 				max-width: 225px
@@ -360,8 +375,11 @@
 		margin-right: 0
 		margin-bottom: 10px
 
-.use-bottom
+.use-bottom-bg
 	background-color: #ebebeb
+	padding: 1px 0
+	.container
+		position: relative
 .use__bottom
 	+r(1023)
 		background-color: #ebebeb

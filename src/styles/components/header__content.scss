@@ -53,7 +53,6 @@
 
 .main__human {
   width: 415px;
-  min-height: 688px;
   position: absolute;
   bottom: 0px;
   left: calc(50% - 673px);
@@ -212,8 +211,21 @@
 
 .main__item {
   padding: 0px 10px 0px 66px;
-  background: url("../img/bulit.png") no-repeat 0 50%;
-
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 44px;
+		height: 44px;
+		background: url("../img/bulit.png") no-repeat center / contain;
+		@include r(479) {
+			width: 34px;
+			height: 34px;
+		
+		}
+	}
   @include r(1023) {
     padding: 0px 10px 0px 50px;
   }
@@ -224,7 +236,8 @@
 
   @include r(479) {
     padding: 0px 10px 7px 40px;
-    background-size: 34px;
+		background-size: 34px;
+	
   }
 }
 

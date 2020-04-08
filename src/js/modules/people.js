@@ -1,7 +1,11 @@
 export default () => {
-	var audios = document.getElementsByTagName('audio');
 	audiojs.events.ready(function() {
-		audiojs.createAll();
+		var as = audiojs.createAll();
+		$('.play').on('click', function(event){
+			for (var prop in audiojs.instances) {
+				audiojs.instances[prop].pause();
+			}
+			return true;
+		});
 	});
-
 };
