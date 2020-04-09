@@ -163,13 +163,25 @@ iframe
 	transition: 0.2s
 .play-pause .play
 	background-image: url(../img/play.svg)
+	background-size: contain
 	&:hover
 		background-image: url(../img/play-hover.svg)
 .play-pause .pause 
 	background-image: url(../img/pause.svg)
+	background-size: contain
 	&:hover
 		background-image: url(../img/pause-hover.svg)
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.play-pause .play
+		background-image: url(../img/play.svg)
+		background-size: contain
+		&:hover
+				background-image: url(../img/play.svg)
+	.play-pause .pause 
+		background-image: url(../img/pause.svg)
+		background-size: contain
+		&:hover
+			background-image: url(../img/pause.svg)
 .scrubber
 	position: relative
 	width: 100%
