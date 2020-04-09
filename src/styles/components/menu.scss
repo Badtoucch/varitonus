@@ -166,10 +166,22 @@
   margin: 0 auto;
 }
 
-// @media only screen and (max-device-width: 480px) {
-//   @-moz-document {
+// @-moz-document url-prefix() {
+//   @media screen and (max-device-width: 480px) {
 //     .menu__button {
-//       top: 60px;
+//       top: 63px !important;
 //     }
 //   }
 // }
+
+@media screen and (max-device-width: 480px) {
+  .menu__button {
+    top: 63px !important;
+  }
+}
+
+@media screen and (max-device-width: 353px) {
+  .menu__button {
+    top: 74px !important;
+  }
+}
