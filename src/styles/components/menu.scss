@@ -8,7 +8,7 @@
   border-radius: 100px;
   background-color: #529e29;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 100;
 
   &:hover {
@@ -19,14 +19,13 @@
     .menu__line::before,
     .menu__line::after {
       background-color: #529e29;
-
     }
   }
 
   @include r(1023) {
     display: flex;
-	}
-	@include r(479) {
+  }
+  @include r(479) {
     top: 80px;
   }
 }
@@ -38,7 +37,7 @@
   width: 20px;
   margin: 0 auto;
   background-color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .menu__line::before,
@@ -48,7 +47,7 @@
   height: 4px;
   width: 20px;
   background-color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .menu__line::before {
@@ -68,7 +67,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 110;
 }
 
@@ -82,7 +81,7 @@
   position: fixed;
   background-color: #faeef3;
   transform: translateX(-100%);
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 115;
 
   &.active {
@@ -91,7 +90,7 @@
     position: fixed;
     transform: translateX(0);
     z-index: 115;
-    transition: all .5s;
+    transition: all 0.5s;
   }
 }
 
@@ -107,7 +106,6 @@
   cursor: pointer;
 
   &:hover {
-
     &::before,
     &::after {
       background-color: red;
@@ -122,7 +120,7 @@
     height: 4px;
     border-radius: 20px;
     background-color: #000000;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &:before {
@@ -167,3 +165,11 @@
   max-width: 220px;
   margin: 0 auto;
 }
+
+// @media only screen and (max-device-width: 480px) {
+//   @-moz-document {
+//     .menu__button {
+//       top: 60px;
+//     }
+//   }
+// }
