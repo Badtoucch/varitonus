@@ -1,7 +1,5 @@
 .menu__button {
   display: none;
-  position: absolute;
-  top: 75px;
   width: 42px;
   height: 42px;
   align-items: center;
@@ -176,12 +174,11 @@
 
 @media screen and (max-device-width: 480px) {
   .menu__button {
-    top: 63px !important;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
   }
 }
 
-@media screen and (max-device-width: 353px) {
-  .menu__button {
-    top: 74px !important;
-  }
-}
+

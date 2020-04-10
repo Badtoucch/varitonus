@@ -1,7 +1,7 @@
 .promo {
   margin-bottom: 202px;
   position: relative;
-z-index: 1;
+z-index: 33;
   @include r(1023) {
     margin-bottom: 0px;
 	}
@@ -17,7 +17,7 @@ z-index: 1;
   padding: 37px 10px 0px;
   position: fixed;
   left: 0;
-  bottom: 88px;
+  bottom: 0;
   width: 90px;
   height: 80px;
   font-size: 10px;

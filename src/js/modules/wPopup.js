@@ -47,7 +47,7 @@ export default () => {
 					});
 				}
 			}
-			$(window).on("scroll", function () {
+			$(window).on("scroll load", function () {
 				toggleBanner();
 			});
 	

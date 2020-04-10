@@ -14,11 +14,13 @@
 
     @include r(1023) {
       margin-bottom: 30px;
-      justify-content: space-around;
+		
+			padding: 15px 0;
     }
 
     @include r(639) {
-      padding: 17px 30px 14px;
+			padding: 15px 30px 15px;
+			position: relative;
     }
 
     @include r(479) {
@@ -41,8 +43,12 @@
   margin-right: auto;
 
   @include r(1219) {
-    margin-right: 0;
+    margin-right: 0px;
+	}
+	@include r(639) {
+    margin-right: 0px;
   }
+
 
   @include r(479) {
     margin-bottom: 10px;
